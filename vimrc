@@ -30,7 +30,6 @@ set viminfo='20,\"100,:30,%,n~/.viminfo
 
 highlight Constant      term=underline ctermfg=Red
 highlight Identifier    term=underline ctermfg=cyan
-highlight Statement     term=italic ctermfg=Brown
 highlight PreProc       term=italic ctermfg=DarkYellow
 highlight Type          term=italic ctermfg=DarkGreen
 highlight Ignore        ctermfg=white
@@ -46,6 +45,11 @@ highlight MatchParen    ctermbg=Yellow
 
 colorscheme jellybeans
 
+" change statement color, like if,else in php,c and highlight in vimrc, etc.
+highlight Statement     ctermfg=107
+" any variable name
+highlight Identifier    ctermfg=147
+
 " set cursorline,cursorcolumn and color in move
 set cursorline
 set cursorcolumn
@@ -54,7 +58,9 @@ highlight Cursorcolumn  ctermbg=236
 
 
 " set line number color
-highlight LineNr        ctermfg=155
+" highlight LineNr        ctermfg=45
+" highlight LineNr        ctermfg=117
+highlight LineNr        ctermfg=117
 
 
 highlight Normal        ctermfg=249
