@@ -42,20 +42,20 @@ highlight StatusLine    ctermfg=darkblue  ctermbg=gray
 highlight StatusLineNC  ctermfg=brown   ctermbg=darkblue
 highlight Subtitle      ctermfg=brown   ctermbg=gray
 highlight MatchParen    ctermbg=Yellow
-highlight cursorcolumn  ctermfg=brown ctermbg=gray
 
 
 colorscheme jellybeans
 
-" set cursor in move
+" set cursorline,cursorcolumn and color in move
 set cursorline
 set cursorcolumn
-" set cursor line color
 highlight Cursorline    ctermbg=235
 highlight Cursorcolumn  ctermbg=236
 
+
 " set line number color
-highlight LineNr        ctermfg=45
+highlight LineNr        ctermfg=155
+
 
 highlight Normal        ctermfg=249
 " set word between quote show transparent
