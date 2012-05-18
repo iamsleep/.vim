@@ -1,0 +1,47 @@
+Version 1.0.0.1
+- change cursor color
+- set line number color
+
+Version 1.0.0
+- init
+
+Installation:
+
+    git clone git://github.com/mywarr/dotvim.git ~/.vim
+
+Create symlinks:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+Switch to the `~/.vim` directory, and fetch submodules:
+
+    cd ~/.vim
+    git submodule init
+    git submodule update
+
+
+UDPATE in bundle:
+* add easymotion
+* add l9 for basic plugin
+* add autocomplete
+* add fuzzyfinder
+* add snipMate
+* add vim-powerline
+* add ShowTrailingWhitespace
+* add DeleteTrailingWhitespace
+* add checksyntax_vim
+* add quickfixsigns - http://www.vim.org/scripts/script.php?script_id=2584
+* add clam - https://github.com/sjl/clam.vim/
+
+USAGE:
+* a.vim http://www.vim.org/scripts/script.php?script_id=31
+    * description
+    -- A few of quick commands to swtich between source files and header files quickly.
+
+* align.vim
+    * /home/iamsleep/.vim/plugin/AlignPlugin.vim
+    * /home/iamsleep/.vim/plugin/AlignMapsPlugin.vim
+    * /home/iamsleep/.vim/plugin/cecutil.vim
+    * /home/iamsleep/.vim/doc/Align.txt
+    * /home/iamsleep/.vim/autoload/Align.vim
+    * /home/iamsleep/.vim/autoload/AlignMaps.vim
