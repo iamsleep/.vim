@@ -60,7 +60,8 @@ highlight Cursorcolumn  ctermbg=236
 " set line number color
 " highlight LineNr        ctermfg=45
 " highlight LineNr        ctermfg=117
-highlight LineNr        ctermfg=117
+highlight LineNr            ctermfg=117
+"highlight CursorLineNr      ctermfg=147
 
 
 highlight Normal        ctermfg=249
