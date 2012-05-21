@@ -1,3 +1,7 @@
+Version 1.0.0.2
+- remove plugin/bufferexploer.vim
+- because ActivateBuffer fail
+
 Version 1.0.0.1
 - change cursor color
 - set line number color
