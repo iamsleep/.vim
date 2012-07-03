@@ -14,7 +14,6 @@ set ts=8
 set sts=4
 set sw=4
 set expandtab
-"set cindent
 set autoindent
 set bs=2
 set number
@@ -77,9 +76,9 @@ set makeprg=gmake\ OPTFLAG=-g
 set foldmethod=marker
 "set foldmethod=indent
 
-
+"
 "set equalprg=perltidy
-set equalprg=indent
+"set equalprg=indent
 
 " for makefile
 " set expandtab
@@ -227,7 +226,6 @@ let g:DeleteTrailingWhitespace_Action = 'delete'
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
 set nocp
-set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
 
 " map localleader
@@ -256,3 +254,13 @@ set nocompatible " remove compatible to vi
 "
 "
 set timeout timeoutlen=1000 ttimeoutlen=100
+
+set nocompatible  " no compatible with vi
+set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
+
+" Indent Guides : A plugin for visually displaying indent levels in Vim
+let g:indent_guides_guide_size=1
+"let g:indent_guides_indent_levels=5
+
+let PHP_BracesAtCodeLevel = 1
+filetype indent on
