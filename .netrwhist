@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/iamsleep/f0.bill.tcv'
 let g:netrw_dirhist_2='/mnt/asb-1.corp.tw1.yahoo.com/vol/vol02/dev1/iamsleep/.vim/bundle/snipMate/plugin'
 let g:netrw_dirhist_3='/home/iamsleep/.vim/bundle/clam.vim'
+let g:netrw_dirhist_4='/home/iamsleep/.globash'

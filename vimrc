@@ -1,4 +1,4 @@
-colorscheme jellybeans
+"colorscheme jellybeans
 "colorscheme lucius
 
 "v:shell_error
@@ -6,19 +6,27 @@ colorscheme jellybeans
 
 syntax on
 set t_Co=256
-set ru
+"set ruler可顯示最後一行的狀態
+set ruler
 set ic
 set incsearch
+"set hlsearch 高亮度反白
 set hlsearch
 set ts=8
 set sts=4
 set sw=4
 set expandtab
-"set cindent
 set autoindent
-set bs=2
+" show line number
 set number
+"   當 backspace 為 2 時，就是可以刪除任意值；0 或 1
+"   時，僅可刪除剛剛輸入的字元， 而無法刪除原本就已經存在的文字了
 set backspace=2
+"這四個選項控制 C 程式縮進:
+"'cindent'       使 Vim 對 C 程式自動縮進。
+"'cinkeys'       指定在插入模式下按哪個鍵可以再次縮進。
+"'cinoptions'    設定你喜好的縮進模式。
+"'cinwords'      定義在下一行中開始一個額外縮進的關鍵字。
 set cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,ps,t0,+s,(0,U1,us,)20,*30,g0
 set cursorline
 "set showcmd
@@ -44,6 +52,7 @@ highlight MatchParen    ctermbg=Yellow
 
 
 colorscheme jellybeans
+"colorscheme twilight256
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 highlight Statement     ctermfg=107
@@ -77,9 +86,9 @@ set makeprg=gmake\ OPTFLAG=-g
 set foldmethod=marker
 "set foldmethod=indent
 
-
+"
 "set equalprg=perltidy
-set equalprg=indent
+"set equalprg=indent
 
 " for makefile
 " set expandtab
@@ -87,7 +96,7 @@ autocmd FileType make set noexpandtab
 autocmd FileType make set sw=8
 autocmd FileType make set sts=8
 
-set ls=2
+set laststatus=2
 
 set grepprg=global\ -t
 set grepformat=%m\	%f\	%l
@@ -227,7 +236,6 @@ let g:DeleteTrailingWhitespace_Action = 'delete'
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
 set nocp
-set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
 
 " map localleader
@@ -256,3 +264,14 @@ set nocompatible " remove compatible to vi
 "
 "
 set timeout timeoutlen=1000 ttimeoutlen=100
+
+set nocompatible  " no compatible with vi
+set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
+
+" Indent Guides : A plugin for visually displaying indent levels in Vim
+let g:indent_guides_guide_size=1
+"let g:indent_guides_indent_levels=5
+
+let PHP_BracesAtCodeLevel = 1
+" filetype indent on will result of insert mode indent strange.
+"filetype indent on

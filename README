@@ -1,3 +1,6 @@
+Version 1.0.0.3
+- add https://github.com/fholgado/minibufexpl.vim
+
 Version 1.0.0.2
 - remove plugin/bufferexploer.vim
 - because ActivateBuffer fail
@@ -36,6 +39,7 @@ UDPATE in bundle:
 * add checksyntax_vim
 * add quickfixsigns - http://www.vim.org/scripts/script.php?script_id=2584
 * add clam - https://github.com/sjl/clam.vim/
+* add minibufexpl - https://github.com/fholgado/minibufexpl.vim
 
 USAGE:
 * a.vim http://www.vim.org/scripts/script.php?script_id=31
@@ -49,3 +53,6 @@ USAGE:
     * /home/iamsleep/.vim/doc/Align.txt
     * /home/iamsleep/.vim/autoload/Align.vim
     * /home/iamsleep/.vim/autoload/AlignMaps.vim
+
+* minibufexpl.vim
+    * http://www.vim.org/scripts/script.php?script_id=159
