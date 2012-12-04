@@ -14,13 +14,6 @@ set ignorecase
 set incsearch
 "set hlsearch 高亮度反白
 set hlsearch
-<<<<<<< HEAD
-=======
-set ts=8
-set sts=4
-set sw=4
-set expandtab
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
 set autoindent
 " show line number
 set number
@@ -106,7 +99,6 @@ set foldmethod=marker
 "set equalprg=perltidy
 "set equalprg=indent
 
-<<<<<<< HEAD
 " {{{ file type tab set
 autocmd FileType make setlocal noexpandtab
 "autocmd FileType make set noexpandtab
@@ -124,16 +116,6 @@ set shiftwidth=4
 "
 "
 set laststatus=2
-=======
-" for makefile
-" set expandtab
-autocmd FileType make set noexpandtab
-autocmd FileType make set sw=8
-autocmd FileType make set sts=8
-
-set ls=2
-
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
 set grepprg=global\ -t
 set grepformat=%m\	%f\	%l
 
@@ -279,25 +261,11 @@ call pathogen#helptags()
 " plugin show trailing white space
 " instead of using below command, use DeleteTrailingWhitespace
 " let g:DeleteTrailingWhitespace_Action = 'delete'
-nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>                                                                                                                                 
+nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>
 vnoremap <Leader>d$ :DeleteTrailingWhitespace<CR>
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
-<<<<<<< HEAD
 " {{{ global key mapping
-=======
-set nocp
-
-
-" map localleader
-" map key to vim plugin Clam
-nnoremap ! :Clam<space>
-vnoremap ! :ClamVisual<space>
-let maplocalleader = ","
-noremap <localleader>r Refresh
-noremap <localleader>p Pipe
-
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
 "
 " map global, gtags in source tree
 "
@@ -317,7 +285,6 @@ nnoremap <C-]> :GtagsCursor<CR>
 "
 "
 set timeout timeoutlen=1000 ttimeoutlen=100
-<<<<<<< HEAD
 set nocompatible  " no compatible with vi
 set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
@@ -333,15 +300,8 @@ set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
 autocmd! BufRead,BufNewFile *.ros setfiletype php
 autocmd! BufRead,BufNewFile *.inc setfiletype php
-=======
 
-set nocompatible  " no compatible with vi
-set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
-
-" Indent Guides : A plugin for visually displaying indent levels in Vim
-let g:indent_guides_guide_size=1
-"let g:indent_guides_indent_levels=5
-
-let PHP_BracesAtCodeLevel = 1
-filetype indent on
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
+" {{{ vbookmark setting
+" http://www.vim.org/scripts/script.php?script_id=4299
+let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
+" }}}
