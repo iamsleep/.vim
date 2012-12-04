@@ -2,20 +2,18 @@
 "colorscheme lucius
 
 "v:shell_error
-"let $VIMRUNTIME="/home/y/share/vim/vim73/"
+"let $VIMRUNTIME="~/local/share/vim/vim73/"
 
 syntax on
 set t_Co=256
 "set ruler可顯示最後一行的狀態
 set ruler
-set ic
+" ignorecase 搜索模式時忽略大小寫
+set ignorecase
+" incsearch 輸入搜索模式時同時高亮部分的匹配
 set incsearch
 "set hlsearch 高亮度反白
 set hlsearch
-set ts=8
-set sts=4
-set sw=4
-set expandtab
 set autoindent
 " show line number
 set number
@@ -29,30 +27,25 @@ set backspace=2
 "'cinwords'      定義在下一行中開始一個額外縮進的關鍵字。
 set cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,ps,t0,+s,(0,U1,us,)20,*30,g0
 set cursorline
-"set showcmd
 " set viminfo
 " '20 is save mark which max is 20
 " % is buffers list
 " :30 is the lines in history record to be saved
 set viminfo='20,\"100,:30,%,n~/.viminfo
 
-highlight Constant      term=underline ctermfg=Red
-highlight Identifier    term=underline ctermfg=cyan
-highlight PreProc       term=italic ctermfg=DarkYellow
-highlight Type          term=italic ctermfg=DarkGreen
+" {{{ highlight color
+highlight Constant      term=underline    ctermfg=Red
+highlight PreProc       term=italic       ctermfg=DarkYellow
+highlight Type          term=italic       ctermfg=DarkGreen
 highlight Ignore        ctermfg=white
-highlight Error         term=reverse ctermbg=Red ctermfg=White
-highlight Todo          term=standout ctermbg=Yellow ctermfg=Red
-highlight Search        term=italic ctermbg=Yellow ctermfg=Black
-highlight ErrorMsg      term=reverse ctermbg=Red ctermfg=White
-highlight StatusLine    ctermfg=darkblue  ctermbg=gray
-highlight StatusLineNC  ctermfg=brown   ctermbg=darkblue
-highlight Subtitle      ctermfg=brown   ctermbg=gray
+highlight Error         term=reverse      ctermbg=Red        ctermfg=White
+highlight Todo          term=standout     ctermbg=Yellow     ctermfg=Red
+highlight ErrorMsg      term=reverse      ctermbg=Red        ctermfg=White
+highlight Subtitle      ctermfg=brown     ctermbg=gray
 highlight MatchParen    ctermbg=Yellow
 
 
 colorscheme jellybeans
-"colorscheme twilight256
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 highlight Statement     ctermfg=107
@@ -62,22 +55,38 @@ highlight Identifier    ctermfg=147
 " set cursorline,cursorcolumn and color in move
 set cursorline
 set cursorcolumn
-highlight Cursorline    ctermbg=235
-highlight Cursorcolumn  ctermbg=236
+highlight Cursorline   cterm=none   ctermbg=241
+highlight Cursorcolumn cterm=none   ctermbg=241
 
 
 " set line number color
 " highlight LineNr        ctermfg=45
 " highlight LineNr        ctermfg=117
-highlight LineNr            ctermfg=117
-"highlight CursorLineNr      ctermfg=147
+highlight LineNr       cterm=none   ctermfg=117  ctermbg=0
+" highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
 
-
-highlight Normal        ctermfg=249
 " set word between quote show transparent
-highlight String        cterm=none       ctermbg=235 ctermfg=225
-highlight Character     cterm=none       ctermbg=235 ctermfg=215
-highlight Special       cterm=none       ctermbg=235 ctermfg=87
+highlight String       cterm=none   ctermfg=117  ctermbg=0
+highlight Character    cterm=none   ctermfg=249  ctermbg=0
+" set [,],;,'," color
+highlight Special      cterm=none   ctermfg=249  ctermbg=0
+highlight Normal       cterm=none   ctermfg=249  ctermbg=0
+highlight NonText      cterm=none   ctermfg=249  ctermbg=0
+
+" /word serch word highlight
+highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
+
+" special key like :q<Enter>
+highlight SpecialKey   cterm=none   ctermfg=249  ctermbg=0
+
+" marker {{{ }}} color
+highlight Folded       cterm=none   ctermfg=249  ctermbg=0
+
+" highlight vim status line
+highlight StatusLine    ctermfg=darkblue  ctermbg=229
+highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
+
+" }}}
 
 "set makeprg=gmake
 set makeprg=gmake\ OPTFLAG=-g
@@ -90,22 +99,34 @@ set foldmethod=marker
 "set equalprg=perltidy
 "set equalprg=indent
 
-" for makefile
-" set expandtab
-autocmd FileType make set noexpandtab
-autocmd FileType make set sw=8
-autocmd FileType make set sts=8
-
+" {{{ file type tab set
+autocmd FileType make setlocal noexpandtab
+"autocmd FileType make set noexpandtab
+"autocmd FileType make set shiftwidth=8
+"autocmd FileType make set softtabstop=8
+""Use softtabstop spaces instead of tab characters for indentation
+set expandtab
+set tabstop=4
+"Indent by 4 spaces when pressing <TAB>
+set softtabstop=4
+" 設置縮進的空格數為
+" "Indent by 4 spaces when using >>, <<, == etc.
+set shiftwidth=4
+" }}}
+"
+"
 set laststatus=2
-
 set grepprg=global\ -t
 set grepformat=%m\	%f\	%l
 
-:set sidescroll=5
-:set scrolljump=5
-:set listchars+=precedes:<,extends:>
-:set nowrap
+set sidescroll=5
+set scrolljump=5
+set listchars+=precedes:<,extends:>
+set nowrap
 
+
+
+" {{{ vim encoding setting
 """
 """ ref: http://blog.yzlin.org/2008/05/14/22/
 """ ref: http://blog.yzlin.org/2007/12/12/3/
@@ -125,6 +146,8 @@ set backupcopy=yes
 "set encoding=big5
 set termencoding=utf-8
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
+
+" }}}
 
 "
 " textMate-style plugin
@@ -154,7 +177,7 @@ let g:acp_completeOption = '.,k,w,b,u,t,i'
 set dictionary+=~/.vim/dict/phpdict
 "set dictionary+=~/.vim/dict/words
 set complete-=k complete+=k
-au FileType * exe('setl dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
+autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
 
 
 "
@@ -174,8 +197,8 @@ map fu <esc>:FufBuffer<cr>
 "
 " winmanager
 "
-:map <c-w><c-f> :FirstExplorerWindow<cr>
-:map <c-w><c-b> :BottomExplorerWindow<cr>
+" :map <c-w><c-f> :FirstExplorerWindow<cr>
+" :map <c-w><c-b> :BottomExplorerWindow<cr>
 
 " insert mode
 " 補齊括弧
@@ -224,35 +247,33 @@ if has("autocmd")
       \ endif
 endif
 
+" {{{ pathogen setting
+"
 " plugin pathogen
 " manage plugin in vim
 "call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" }}}
+
 " plugin delete trailing white space
 " plugin show trailing white space
-let g:DeleteTrailingWhitespace_Action = 'delete'
+" instead of using below command, use DeleteTrailingWhitespace
+" let g:DeleteTrailingWhitespace_Action = 'delete'
+nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>                                                                                                                                 
+vnoremap <Leader>d$ :DeleteTrailingWhitespace<CR>
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
-set nocp
-
-
-" map localleader
-" map key to vim plugin Clam
-nnoremap ! :Clam<space>
-vnoremap ! :ClamVisual<space>
-let maplocalleader = ","
-noremap <localleader>r Refresh
-noremap <localleader>p Pipe
-
+" {{{ global key mapping
 "
 " map global, gtags in source tree
 "
 nnoremap <C-]> :GtagsCursor<CR>
 
-set nocompatible " remove compatible to vi
+" }}}
 
+" {{{ triger key timeout
 "
 " These two options together determine the behavior when part of a
 "        mapped key sequence or keyboard code has been received:
@@ -264,14 +285,18 @@ set nocompatible " remove compatible to vi
 "
 "
 set timeout timeoutlen=1000 ttimeoutlen=100
-
 set nocompatible  " no compatible with vi
 set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
+" }}}
+
 " Indent Guides : A plugin for visually displaying indent levels in Vim
-let g:indent_guides_guide_size=1
+" let g:indent_guides_guide_size=1
 "let g:indent_guides_indent_levels=5
 
-let PHP_BracesAtCodeLevel = 1
+" let PHP_BracesAtCodeLevel = 1
 " filetype indent on will result of insert mode indent strange.
-"filetype indent on
+" filetype indent on
+
+autocmd! BufRead,BufNewFile *.ros setfiletype php
+autocmd! BufRead,BufNewFile *.inc setfiletype php
