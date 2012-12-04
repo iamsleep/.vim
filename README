@@ -1,25 +1,9 @@
+Version 1.0.0.4
+- add star search
+  http://www.vim.org/scripts/script.php?script_id=4335
+
 Version 1.0.0.3
-<<<<<<< HEAD
 - add https://github.com/fholgado/minibufexpl.vim
-=======
-- git diff
-#       modified:   .VimballRecord
-#       modified:   README
-#       modified:   bundle/checksyntax_vim (modified content, untracked content)
-#       modified:   bundle/clam.vim (new commits, untracked content)
-#       modified:   bundle/quickfixsigns_vim (new commits)
-#       modified:   bundle/vim-powerline (new commits)
-#       modified:   doc/tags
-#       modified:   vimrc
-- add mark to show different color in mark word
-- add PHP-Indenting-for-vim
-- add vim-indent-guides
-- add indent folder
-- remove quelprg in vimrc, quelprg is to use external commands to indent files.
-- for more detail, to see follow urls:
-  http://c9s.blogspot.tw/2008/09/vim.html
-  http://blah.blogsome.com/2007/09/
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
 
 Version 1.0.0.2
 - remove plugin/bufferexploer.vim
@@ -59,13 +43,9 @@ UDPATE in bundle:
 * add checksyntax_vim
 * add quickfixsigns - http://www.vim.org/scripts/script.php?script_id=2584
 * add clam - https://github.com/sjl/clam.vim/
-<<<<<<< HEAD
 * add minibufexpl - https://github.com/fholgado/minibufexpl.vim
-=======
 * add PHP-Indenting-for-vim - http://www.vim.org/scripts/script.php?script_id=1120
 * add vim-indent-guides - to show indent line in files
-
->>>>>>> 9d9d1fe3c3f64e2055ce405177beb34f103d11bb
 
 USAGE:
 * a.vim http://www.vim.org/scripts/script.php?script_id=31
