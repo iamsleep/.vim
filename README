@@ -1,3 +1,6 @@
+Version 1.0.0.6
+- add http://www.vim.org/scripts/script.php?script_id=492
+
 Version 1.0.0.5
 - fix vimrc
 
@@ -49,6 +52,7 @@ UDPATE in bundle:
 * add minibufexpl - https://github.com/fholgado/minibufexpl.vim
 * add PHP-Indenting-for-vim - http://www.vim.org/scripts/script.php?script_id=1120
 * add vim-indent-guides - to show indent line in files
+* add SQLUtilities - http://www.vim.org/scripts/script.php?script_id=492
 
 USAGE:
 * a.vim http://www.vim.org/scripts/script.php?script_id=31
