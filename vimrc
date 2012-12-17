@@ -265,6 +265,9 @@ nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>
 vnoremap <Leader>d$ :DeleteTrailingWhitespace<CR>
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
+nnoremap <Leader>error oerror_log(__FILE__ . " line: " . __LINE__);<esc>
+nnoremap <Leader>print oerror_log(print_r( $res, 1));<esc>
+
 " {{{ global key mapping
 "
 " map global, gtags in source tree
