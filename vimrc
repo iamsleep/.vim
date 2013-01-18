@@ -6,32 +6,6 @@
 
 syntax on
 set t_Co=256
-"set ruler可顯示最後一行的狀態
-set ruler
-" ignorecase 搜索模式時忽略大小寫
-set ignorecase
-" incsearch 輸入搜索模式時同時高亮部分的匹配
-set incsearch
-"set hlsearch 高亮度反白
-set hlsearch
-set autoindent
-" show line number
-set number
-"   當 backspace 為 2 時，就是可以刪除任意值；0 或 1
-"   時，僅可刪除剛剛輸入的字元， 而無法刪除原本就已經存在的文字了
-set backspace=2
-"這四個選項控制 C 程式縮進:
-"'cindent'       使 Vim 對 C 程式自動縮進。
-"'cinkeys'       指定在插入模式下按哪個鍵可以再次縮進。
-"'cinoptions'    設定你喜好的縮進模式。
-"'cinwords'      定義在下一行中開始一個額外縮進的關鍵字。
-set cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,ps,t0,+s,(0,U1,us,)20,*30,g0
-set cursorline
-" set viminfo
-" '20 is save mark which max is 20
-" % is buffers list
-" :30 is the lines in history record to be saved
-set viminfo='20,\"100,:30,%,n~/.viminfo
 
 " {{{ highlight color
 highlight Constant      term=underline    ctermfg=Red
@@ -45,7 +19,8 @@ highlight Subtitle      ctermfg=brown     ctermbg=gray
 highlight MatchParen    ctermbg=Yellow
 
 
-colorscheme jellybeans
+"colorscheme jellybeans
+"colorscheme gruvbox
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 highlight Statement     ctermfg=107
@@ -57,7 +32,6 @@ set cursorline
 set cursorcolumn
 highlight Cursorline   cterm=none   ctermbg=241
 highlight Cursorcolumn cterm=none   ctermbg=241
-
 
 " set line number color
 " highlight LineNr        ctermfg=45
@@ -87,17 +61,14 @@ highlight StatusLine    ctermfg=darkblue  ctermbg=229
 highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 
 " }}}
+"
+" {{{ gruvbox colorscheme setting
+colorscheme gruvbox
+highlight Comment  cterm=none ctermfg=240  ctermbg=0
+" }}}
 
 "set makeprg=gmake
 set makeprg=gmake\ OPTFLAG=-g
-
-"set foldmethod=manual
-set foldmethod=marker
-"set foldmethod=indent
-
-"
-"set equalprg=perltidy
-"set equalprg=indent
 
 " {{{ file type tab set
 autocmd FileType make setlocal noexpandtab
@@ -113,8 +84,8 @@ set softtabstop=4
 " "Indent by 4 spaces when using >>, <<, == etc.
 set shiftwidth=4
 " }}}
-"
-"
+
+" {{{ vim display setting
 set laststatus=2
 set grepprg=global\ -t
 set grepformat=%m\	%f\	%l
@@ -124,7 +95,42 @@ set scrolljump=5
 set listchars+=precedes:<,extends:>
 set nowrap
 
+"set foldmethod=manual
+set foldmethod=marker
+"set foldmethod=indent
 
+"set equalprg=perltidy
+"set equalprg=indent
+"set ruler可顯示最後一行的狀態
+set ruler
+" ignorecase 搜索模式時忽略大小寫
+set ignorecase
+" incsearch 輸入搜索模式時同時高亮部分的匹配
+set incsearch
+"set hlsearch 高亮度反白
+set hlsearch
+set autoindent
+" show line number
+" this is replace via function ToggleNumber
+"set number
+
+"   當 backspace 為 2 時，就是可以刪除任意值；0 或 1
+"   時，僅可刪除剛剛輸入的字元， 而無法刪除原本就已經存在的文字了
+set backspace=2
+"這四個選項控制 C 程式縮進:
+"'cindent'       使 Vim 對 C 程式自動縮進。
+"'cinkeys'       指定在插入模式下按哪個鍵可以再次縮進。
+"'cinoptions'    設定你喜好的縮進模式。
+"'cinwords'      定義在下一行中開始一個額外縮進的關鍵字。
+set cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,ps,t0,+s,(0,U1,us,)20,*30,g0
+set cursorline
+" set viminfo
+" '20 is save mark which max is 20
+" % is buffers list
+" :30 is the lines in history record to be saved
+set viminfo='20,\"100,:30,%,n~/.viminfo
+
+" }}}
 
 " {{{ vim encoding setting
 """
@@ -149,39 +155,34 @@ set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 
 " }}}
 
-"
-" textMate-style plugin
-"
+" {{{ textMate-style plugin
 :filetype plugin on
+" }}}
 
-
-"
-" make vim's auto-complete behave like bash's default auto-complete in edit
-"
+" {{{ make vim's auto-complete behave like bash's default auto-complete in edit
 set wildmenu
 set wildmode=list:longest
 if has("statusline")
     " show [enc][tenc][fenc] on statusline
     set statusline=%<%f\ %h%m%r%=%{\"[\".(&enc==\"\"?\"\?\":&enc).\"]\"}%{\"[\".(&tenc==\"\"?\"\?\":&tenc).\"]\"}%{\"[\".(&fenc==\"\"?\"\?\":&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
 endif
+" }}}
 
-"
-" setting for acp_completeOption
+" {{{ setting for acp_completeOption
 " 1. 增加預設搜尋範圍
 " 2. add Snipmate template mapping
 "
 let g:acp_completeOption = '.,k,w,b,u,t,i'
+" }}}
 
-
-" set dictionary content
+" {{{ set dictionary content
 set dictionary+=~/.vim/dict/phpdict
 "set dictionary+=~/.vim/dict/words
 set complete-=k complete+=k
 autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
+" }}}
 
-
-"
-" fuzzyfinder
+" {{{ vim plugin fuzzyfinder key biding
 "
 
 " map ft <esc>:FufTag<cr>
@@ -190,6 +191,8 @@ autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim'
 " map fba <esc>:FufAddBookmark<cr>
 " map fbl <esc>:FufBookmark<cr>
 map fu <esc>:FufBuffer<cr>
+
+" }}}
 
 " "let Tlist_Inc_Winwidth = 0
 " "nnoremap <silent> <F8> :Tlist<CR>
@@ -238,7 +241,7 @@ map fu <esc>:FufBuffer<cr>
 " endfunction
 " autocmd InsertLeave * call s:AutoCompleteSave()
 
-" return to last edit line
+" {{{ vim return to last edit line
 if has("autocmd")
    autocmd BufRead *.txt set tw=78
    autocmd BufReadPost *
@@ -246,6 +249,7 @@ if has("autocmd")
       \   exe "normal g'\"" |
       \ endif
 endif
+" }}}
 
 " {{{ pathogen setting
 "
@@ -257,16 +261,20 @@ call pathogen#helptags()
 
 " }}}
 
-" plugin delete trailing white space
+" {{{ vim plugin delete trailing white space
 " plugin show trailing white space
 " instead of using below command, use DeleteTrailingWhitespace
 " let g:DeleteTrailingWhitespace_Action = 'delete'
 nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>
 vnoremap <Leader>d$ :DeleteTrailingWhitespace<CR>
 let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
+" }}}
 
+" {{{ vim macro for php
 nnoremap <Leader>error oerror_log(__FILE__ . " line: " . __LINE__);<esc>
 nnoremap <Leader>print oerror_log(print_r( $res, 1));<esc>
+nnoremap <Leader>format o/* vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4: */<esc>
+" }}}
 
 " {{{ global key mapping
 "
@@ -293,18 +301,51 @@ set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
 " }}}
 
+" {{{ vim plugin indent guides setting
 " Indent Guides : A plugin for visually displaying indent levels in Vim
-" let g:indent_guides_guide_size=1
+"let g:indent_guides_guide_size=1
 "let g:indent_guides_indent_levels=5
+"let g:indent_guides_auto_colors = 0
+"set background=light
+"autocmd VimEnter,Colorscheme *
+"hi IndentGuidesOdd  guibg=red   ctermbg=3
+" }}}
 
 " let PHP_BracesAtCodeLevel = 1
 " filetype indent on will result of insert mode indent strange.
 " filetype indent on
-
+" {{{
 autocmd! BufRead,BufNewFile *.ros setfiletype php
 autocmd! BufRead,BufNewFile *.inc setfiletype php
+" }}}
 
 " {{{ vbookmark setting
 " http://www.vim.org/scripts/script.php?script_id=4299
 let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
+" }}}
+
+" {{{ vim plugin powerline display setting
+let g:Powerline_symbols = 'fancy'
+" }}}
+
+" {{{ relative line number by default
+set relativenumber
+let s:number_setting = 1
+
+function ToggleNumber()
+    if s:number_setting == 0
+        set relativenumber
+        let s:number_setting = 1
+    elseif s:number_setting == 1
+        set number
+        let s:number_setting = 2
+    else
+        set nonumber
+        set norelativenumber
+        let s:number_setting = 0
+    endif
+endfunction
+
+" map gn to toggle rnu -> nu -> nonu
+nmap gn :call ToggleNumber()<CR>
 " }}}
