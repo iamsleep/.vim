@@ -64,7 +64,7 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 "
 " {{{ gruvbox colorscheme setting
 colorscheme gruvbox
-highlight Comment  cterm=none ctermfg=240  ctermbg=0
+highlight Comment  cterm=none ctermfg=253  ctermbg=0
 " }}}
 
 "set makeprg=gmake
