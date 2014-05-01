@@ -46,6 +46,7 @@ highlight Character    cterm=none   ctermfg=249  ctermbg=0
 highlight Special      cterm=none   ctermfg=249  ctermbg=0
 highlight Normal       cterm=none   ctermfg=249  ctermbg=0
 highlight NonText      cterm=none   ctermfg=249  ctermbg=0
+highlight NonText      cterm=NONE   ctermfg=NONE
 
 " /word serch word highlight
 highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
@@ -156,11 +157,15 @@ set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 " }}}
 
 " {{{ textMate-style plugin
-:filetype plugin on
+filetype plugin on
+filetype on
 " }}}
 
 " {{{ make vim's auto-complete behave like bash's default auto-complete in edit
 set wildmenu
+" wildmode is used for cmdline-completion
+" see vim tip
+" http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 set wildmode=list:longest
 if has("statusline")
     " show [enc][tenc][fenc] on statusline
@@ -172,13 +177,17 @@ endif
 " 1. 增加預設搜尋範圍
 " 2. add Snipmate template mapping
 "
-let g:acp_completeOption = '.,k,w,b,u,t,i'
+let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 " }}}
 
 " {{{ set dictionary content
-set dictionary+=~/.vim/dict/phpdict
-"set dictionary+=~/.vim/dict/words
-set complete-=k complete+=k
+"set dictionary-=~/.vim/dictionary dictionary+=~/.vim/dict/phpdict
+"set dictionary-=~/newauctions/commonlib/trunk/tests/functional/feature/features dictionary+=~/newauctions/commonlib/trunk/tests/functional/feature/features
+"set complete-=k complete+=k
+set complete-=k~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
+set complete+=k~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
+set complete-=U complete+=U
+"set thesaurus+=~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
 autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
 " }}}
 
@@ -191,15 +200,6 @@ autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim'
 " map fba <esc>:FufAddBookmark<cr>
 " map fbl <esc>:FufBookmark<cr>
 map fu <esc>:FufBuffer<cr>
-
-" }}}
-
-" "let Tlist_Inc_Winwidth = 0
-" "nnoremap <silent> <F8> :Tlist<CR>
-
-"
-" winmanager
-"
 " :map <c-w><c-f> :FirstExplorerWindow<cr>
 " :map <c-w><c-b> :BottomExplorerWindow<cr>
 
@@ -231,15 +231,13 @@ map fu <esc>:FufBuffer<cr>
 "imap e <c-x><c-i>
 "imap w <c-x><c-o>
 
-"let g:Powerline_symbols = 'fancy'
-
-
 " insert mode bind InsertChange
 " function s:AutoCompleteSave()
 "    "call writefile(inputsecret(),".vim/dict/worddict");
 "    echo tempname()
 " endfunction
 " autocmd InsertLeave * call s:AutoCompleteSave()
+" }}}
 
 " {{{ vim return to last edit line
 if has("autocmd")
@@ -332,7 +330,7 @@ let g:Powerline_symbols = 'fancy'
 set relativenumber
 let s:number_setting = 1
 
-function ToggleNumber()
+function! ToggleNumber()
     if s:number_setting == 0
         set relativenumber
         let s:number_setting = 1
@@ -348,4 +346,38 @@ endfunction
 
 " map gn to toggle rnu -> nu -> nonu
 nmap gn :call ToggleNumber()<CR>
+" }}}
+
+" add feature file to vim buffer
+" we need to do this for line completion
+" help i_CTRL-X_CTRL-L to check command
+" {{{ add feature file to vim buffer
+let g:your_feature_file_path = "/home/iamsleep/newauctions/"
+function! AddAllFeatureFileToBuffer()
+    if (&filetype == 'cucumber')
+        " let s:feature_file = system('global -Po .feature$')
+        let s:feature_file = system('find ' . g:your_feature_file_path . ' -type f -name "*.feature"')
+        for file in split(s:feature_file, "\n")
+            exec 'silent! badd ' file
+        endfor
+    endif
+endfunc
+
+nmap gc :call AddAllFeatureFileToBuffer()<CR>
+
+" delete buffers, but these still exist in unlisted-buffer
+function! ClearHiddenRO()
+    let index = 1
+    let last_index = bufnr('$')
+    let current_buffer_number = bufnr('%')
+
+    while index <= last_index
+        if index != current_buffer_number
+           execute "silent! bdelete!" index
+        endif
+        let index += 1
+    endwhile
+endfunc
+
+nmap  gt :call ClearHiddenRO()<CR>
 " }}}
