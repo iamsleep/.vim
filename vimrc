@@ -381,3 +381,4 @@ endfunc
 
 nmap  gt :call ClearHiddenRO()<CR>
 " }}}
+
