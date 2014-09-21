@@ -1,9 +1,3 @@
-"colorscheme jellybeans
-"colorscheme lucius
-
-"v:shell_error
-"let $VIMRUNTIME="~/local/share/vim/vim73/"
-
 syntax on
 set t_Co=256
 
@@ -45,8 +39,6 @@ highlight Character    cterm=none   ctermfg=249  ctermbg=0
 " set [,],;,'," color
 highlight Special      cterm=none   ctermfg=249  ctermbg=0
 highlight Normal       cterm=none   ctermfg=249  ctermbg=0
-highlight NonText      cterm=none   ctermfg=249  ctermbg=0
-highlight NonText      cterm=NONE   ctermfg=NONE
 
 " /word serch word highlight
 highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
@@ -66,13 +58,35 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 " {{{ gruvbox colorscheme setting
 colorscheme gruvbox
 highlight Comment  cterm=none ctermfg=253  ctermbg=0
+" http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
+highlight NonText  cterm=bold ctermfg=247 ctermbg=0
 " }}}
 
-"set makeprg=gmake
-set makeprg=gmake\ OPTFLAG=-g
+" {{{ vim encoding setting
+"""
+""" ref: http://blog.yzlin.org/2008/05/14/22/
+""" ref: http://blog.yzlin.org/2007/12/12/3/
+"""
+" 所有可能的檔案編碼
+set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
+" 啟動後使用 utf-8 編碼
+set encoding=utf-8
+" 新開的檔案預設是 utf-8 編碼
+set fileencoding=utf-8
+" 設定輸出到 terminal 的編碼
+set termencoding=utf-8
+" 將 unicode 中不確定的字符表示成雙字符，在 unicode 下才有用
+set ambiwidth=double
+
+set backupcopy=yes
+"set encoding=big5
+set termencoding=utf-8
+set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
+
+" }}}
 
 " {{{ file type tab set
-autocmd FileType make setlocal noexpandtab
+"autocmd FileType make setlocal noexpandtab
 "autocmd FileType make set noexpandtab
 "autocmd FileType make set shiftwidth=8
 "autocmd FileType make set softtabstop=8
@@ -93,7 +107,10 @@ set grepformat=%m\	%f\	%l
 
 set sidescroll=5
 set scrolljump=5
-set listchars+=precedes:<,extends:>
+" http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
+" http://yyq123.blogspot.tw/2011/11/vim-listchars.html
+set nolist " displayed ^M / $
+set listchars=eol:℗,tab:>-,trail:»,extends:>,precedes:<
 set nowrap
 
 "set foldmethod=manual
@@ -133,34 +150,6 @@ set viminfo='20,\"100,:30,%,n~/.viminfo
 
 " }}}
 
-" {{{ vim encoding setting
-"""
-""" ref: http://blog.yzlin.org/2008/05/14/22/
-""" ref: http://blog.yzlin.org/2007/12/12/3/
-"""
-" 所有可能的檔案編碼
-set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
-" 啟動後使用 utf-8 編碼
-set encoding=utf-8
-" 新開的檔案預設是 utf-8 編碼
-set fileencoding=utf-8
-" 設定輸出到 terminal 的編碼
-set termencoding=utf-8
-" 將 unicode 中不確定的字符表示成雙字符，在 unicode 下才有用
-set ambiwidth=double
-
-set backupcopy=yes
-"set encoding=big5
-set termencoding=utf-8
-set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
-
-" }}}
-
-" {{{ textMate-style plugin
-filetype plugin on
-filetype on
-" }}}
-
 " {{{ make vim's auto-complete behave like bash's default auto-complete in edit
 set wildmenu
 " wildmode is used for cmdline-completion
@@ -182,18 +171,26 @@ let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 
 " {{{ set dictionary content
 "set dictionary-=~/.vim/dictionary dictionary+=~/.vim/dict/phpdict
-"set dictionary-=~/newauctions/commonlib/trunk/tests/functional/feature/features dictionary+=~/newauctions/commonlib/trunk/tests/functional/feature/features
 "set complete-=k complete+=k
-set complete-=k~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
-set complete+=k~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
 set complete-=U complete+=U
-"set thesaurus+=~/newauctions/commonlib/trunk/tests/functional/feature/features/*.feature
-autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
+"set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
+"autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
+" }}}
+
+" {{{ vim spell
+" ref : http://stackoverflow.com/questions/5289012/separate-vim-spellfile-for-custom-words
+" ref : http://superuser.com/questions/133208/how-to-make-vim-spellcheck-remember-a-new-word
+"set spell
+"set spellfile=~/.vim/spell.en.add
+"set spelllang=en
+"hi SpellBad ctermfg=white ctermbg=darkred
+"hi SpellCap ctermfg=white ctermbg=darkred
+"hi SpellRare ctermfg=white ctermbg=darkred
+"hi SpellLocal ctermfg=white ctermbg=darkred
+"set modeline
 " }}}
 
 " {{{ vim plugin fuzzyfinder key biding
-"
-
 " map ft <esc>:FufTag<cr>
 " map ff <esc>:FufFile<cr>
 " map fcd <esc>:FufDir<cr>
@@ -247,6 +244,8 @@ if has("autocmd")
       \   exe "normal g'\"" |
       \ endif
 endif
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/syntax/yaml.vim
+
 " }}}
 
 " {{{ pathogen setting
@@ -269,8 +268,8 @@ let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 " }}}
 
 " {{{ vim macro for php
-nnoremap <Leader>error oerror_log(__FILE__ . " line: " . __LINE__);<esc>
-nnoremap <Leader>print oerror_log(print_r( $res, 1));<esc>
+nnoremap <Leader>error oerror_log(__FILE__ . " line: " . __LINE__ . "\n", 3, '/tmp/derek.log');<esc>
+nnoremap <Leader>print oerror_log(print_r( $res, 1) . "\n", 3, '/tmp/derek.log');<esc>
 nnoremap <Leader>format o/* vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4: */<esc>
 " }}}
 
@@ -309,19 +308,6 @@ set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 "hi IndentGuidesOdd  guibg=red   ctermbg=3
 " }}}
 
-" let PHP_BracesAtCodeLevel = 1
-" filetype indent on will result of insert mode indent strange.
-" filetype indent on
-" {{{
-autocmd! BufRead,BufNewFile *.ros setfiletype php
-autocmd! BufRead,BufNewFile *.inc setfiletype php
-" }}}
-
-" {{{ vbookmark setting
-" http://www.vim.org/scripts/script.php?script_id=4299
-let g:vbookmark_bookmarkSaveFile = $HOME . '/.vimbookmark'
-" }}}
-
 " {{{ vim plugin powerline display setting
 let g:Powerline_symbols = 'fancy'
 " }}}
@@ -346,38 +332,4 @@ endfunction
 
 " map gn to toggle rnu -> nu -> nonu
 nmap gn :call ToggleNumber()<CR>
-" }}}
-
-" add feature file to vim buffer
-" we need to do this for line completion
-" help i_CTRL-X_CTRL-L to check command
-" {{{ add feature file to vim buffer
-let g:your_feature_file_path = "/home/iamsleep/newauctions/"
-function! AddAllFeatureFileToBuffer()
-    if (&filetype == 'cucumber')
-        " let s:feature_file = system('global -Po .feature$')
-        let s:feature_file = system('find ' . g:your_feature_file_path . ' -type f -name "*.feature"')
-        for file in split(s:feature_file, "\n")
-            exec 'silent! badd ' file
-        endfor
-    endif
-endfunc
-
-nmap gc :call AddAllFeatureFileToBuffer()<CR>
-
-" delete buffers, but these still exist in unlisted-buffer
-function! ClearHiddenRO()
-    let index = 1
-    let last_index = bufnr('$')
-    let current_buffer_number = bufnr('%')
-
-    while index <= last_index
-        if index != current_buffer_number
-           execute "silent! bdelete!" index
-        endif
-        let index += 1
-    endwhile
-endfunc
-
-nmap  gt :call ClearHiddenRO()<CR>
 " }}}
