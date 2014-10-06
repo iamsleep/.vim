@@ -1,3 +1,8 @@
+* Version 1.0.1
+  
+  > add syntax/yaml.vim, because it's really slow after using vim7.4 original yaml.vim, so we use new one to ehance 
+  > yaml.vim script is from https://github.com/stephpy/vim-yaml
+
 * Version 1.0.0.9
   
   > change String / Special / Identifier color
