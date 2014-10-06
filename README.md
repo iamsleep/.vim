@@ -1,3 +1,6 @@
+Version 1.0.0.8
+- update NonText / Normal color to ctermbg=230
+
 Version 1.0.0.7
 - add macro key binding
 
