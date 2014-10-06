@@ -55,10 +55,13 @@ highlight NonText  cterm=none ctermfg=brown ctermbg=229
 highlight Normal   cterm=none ctermfg=brown  ctermbg=229
 highlight Cursorline   cterm=none   ctermfg=243 ctermbg=229
 highlight Cursorcolumn cterm=none   ctermfg=243 ctermbg=229
-highlight String       cterm=none   ctermfg=229  ctermbg=0
+" set word between quote show transparent
+highlight String       cterm=none   ctermfg=0  ctermbg=229
 highlight Character    cterm=none   ctermfg=229  ctermbg=0
-highlight Identifier   ctermfg=229
-highlight Special      cterm=none   ctermfg=249  ctermbg=0
+" like '$varable' color
+highlight Identifier   ctermfg=0    ctermbg=229
+" set [,],;,'," color
+highlight Special      cterm=none   ctermfg=0  ctermbg=229
 highlight LineNr       cterm=none   ctermfg=0  ctermbg=229
 " }}}
 

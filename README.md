@@ -1,3 +1,7 @@
+* Version 1.0.0.9
+  
+  > change String / Special / Identifier color
+
 * Version 1.0.0.8
   
   > update NonText / Normal color to ctermbg=230
