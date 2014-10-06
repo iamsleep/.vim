@@ -17,28 +17,20 @@ highlight MatchParen    ctermbg=Yellow
 "colorscheme gruvbox
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
-highlight Statement     ctermfg=107
-" any variable name
-highlight Identifier    ctermfg=147
-
 " set cursorline,cursorcolumn and color in move
 set cursorline
 set cursorcolumn
-highlight Cursorline   cterm=none   ctermbg=241
-highlight Cursorcolumn cterm=none   ctermbg=241
 
 " set line number color
 " highlight LineNr        ctermfg=45
 " highlight LineNr        ctermfg=117
-highlight LineNr       cterm=none   ctermfg=117  ctermbg=0
+"highlight LineNr       cterm=none   ctermfg=117  ctermbg=0
 " highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
 
 " set word between quote show transparent
 highlight String       cterm=none   ctermfg=117  ctermbg=0
 highlight Character    cterm=none   ctermfg=249  ctermbg=0
 " set [,],;,'," color
-highlight Special      cterm=none   ctermfg=249  ctermbg=0
-highlight Normal       cterm=none   ctermfg=249  ctermbg=0
 
 " /word serch word highlight
 highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
@@ -57,10 +49,18 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 "
 " {{{ gruvbox colorscheme setting
 colorscheme gruvbox
-highlight Comment  cterm=none ctermfg=253  ctermbg=0
+highlight Comment  cterm=none ctermfg=0  ctermbg=229
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none ctermfg=brown ctermbg=230
-highlight Normal   cterm=none ctermfg=brown  ctermbg=230
+highlight NonText  cterm=none ctermfg=brown ctermbg=229
+highlight Normal   cterm=none ctermfg=brown  ctermbg=229
+highlight Cursorline   cterm=none   ctermbg=229
+highlight Cursorcolumn cterm=none   ctermbg=229
+highlight String       cterm=none   ctermfg=229  ctermbg=0
+highlight Character    cterm=none   ctermfg=229  ctermbg=0
+highlight Identifier   ctermfg=229
+highlight Special      cterm=none   ctermfg=249  ctermbg=0
+highlight LineNr       cterm=none   ctermfg=0  ctermbg=229
+
 " }}}
 
 " {{{ vim encoding setting
