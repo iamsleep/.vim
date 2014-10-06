@@ -60,7 +60,6 @@ highlight Character    cterm=none   ctermfg=229  ctermbg=0
 highlight Identifier   ctermfg=229
 highlight Special      cterm=none   ctermfg=249  ctermbg=0
 highlight LineNr       cterm=none   ctermfg=0  ctermbg=229
-
 " }}}
 
 " {{{ vim encoding setting
