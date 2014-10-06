@@ -1,32 +1,41 @@
 * Version 1.0.0.8
-- update NonText / Normal color to ctermbg=230
+  
+  > update NonText / Normal color to ctermbg=230
 
 * Version 1.0.0.7
-- add macro key binding
+  
+  > add macro key binding
 
 * Version 1.0.0.6
-- add http://www.vim.org/scripts/script.php?script_id=492
+  
+  > add http://www.vim.org/scripts/script.php?script_id=492
 
 * Version 1.0.0.5
-- fix vimrc
+  
+  > fix vimrc
 
 * Version 1.0.0.4
-- add star search
-  http://www.vim.org/scripts/script.php?script_id=4335
+  
+  > add star search 
+  > http://www.vim.org/scripts/script.php?script_id=4335
 
 * Version 1.0.0.3
-- add https://github.com/fholgado/minibufexpl.vim
+  
+  > add https://github.com/fholgado/minibufexpl.vim
 
 * Version 1.0.0.2
-- remove plugin/bufferexploer.vim
-- because ActivateBuffer fail
+  
+  > remove plugin/bufferexploer.vim 
+  > because ActivateBuffer fail
 
 * Version 1.0.0.1
-- change cursor color
-- set line number color
+  
+  > change cursor color 
+  > set line number color
 
 * Version 1.0.0
-- init
+  
+  > init
 
 
 ------------------------------
