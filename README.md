@@ -1,66 +1,70 @@
-* reference [color] [1]
-
-Version 1.0.0.8
+* Version 1.0.0.8
 - update NonText / Normal color to ctermbg=230
 
-Version 1.0.0.7
+* Version 1.0.0.7
 - add macro key binding
 
-Version 1.0.0.6
+* Version 1.0.0.6
 - add http://www.vim.org/scripts/script.php?script_id=492
 
-Version 1.0.0.5
+* Version 1.0.0.5
 - fix vimrc
 
-Version 1.0.0.4
+* Version 1.0.0.4
 - add star search
   http://www.vim.org/scripts/script.php?script_id=4335
 
-Version 1.0.0.3
+* Version 1.0.0.3
 - add https://github.com/fholgado/minibufexpl.vim
 
-Version 1.0.0.2
+* Version 1.0.0.2
 - remove plugin/bufferexploer.vim
 - because ActivateBuffer fail
 
-Version 1.0.0.1
+* Version 1.0.0.1
 - change cursor color
 - set line number color
 
-Version 1.0.0
+* Version 1.0.0
 - init
 
-Installation:
+
+------------------------------
+* reference [color] [1]
+
+-----------------------------
+* Installation:
 
     git clone git://github.com/mywarr/dotvim.git ~/.vim
 
-Create symlinks:
+* Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
-Switch to the `~/.vim` directory, and fetch submodules:
+* Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule init
     git submodule update
 
 
-UDPATE in bundle:
-* add easymotion
-* add l9 for basic plugin
-* add autocomplete
-* add fuzzyfinder
-* add snipMate
-* add vim-powerline
-* add ShowTrailingWhitespace
-* add DeleteTrailingWhitespace
-* add checksyntax_vim
-* add quickfixsigns - http://www.vim.org/scripts/script.php?script_id=2584
-* add clam - https://github.com/sjl/clam.vim/
-* add minibufexpl - https://github.com/fholgado/minibufexpl.vim
-* add PHP-Indenting-for-vim - http://www.vim.org/scripts/script.php?script_id=1120
-* add vim-indent-guides - to show indent line in files
-* add SQLUtilities - http://www.vim.org/scripts/script.php?script_id=492
+* UDPATE in bundle:
+  
+  > add easymotion
+  > add l9 for basic plugin
+  > add autocomplete
+  > add fuzzyfinder
+  > add snipMate
+  > add vim-powerline
+  > add ShowTrailingWhitespace
+  > add DeleteTrailingWhitespace
+  > add checksyntax_vim
+  > add quickfixsigns - http://www.vim.org/scripts/script.php?script_id=2584
+  > add clam - https://github.com/sjl/clam.vim/
+  > add minibufexpl - https://github.com/fholgado/minibufexpl.vim
+  > add PHP-Indenting-for-vim - http://www.vim.org/scripts/script.php?script_id=1120
+  > add vim-indent-guides - to show indent line in files
+  > add SQLUtilities - http://www.vim.org/scripts/script.php?script_id=492
 
 USAGE:
 * a.vim http://www.vim.org/scripts/script.php?script_id=31

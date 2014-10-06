@@ -53,8 +53,8 @@ highlight Comment  cterm=none ctermfg=0  ctermbg=229
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
 highlight NonText  cterm=none ctermfg=brown ctermbg=229
 highlight Normal   cterm=none ctermfg=brown  ctermbg=229
-highlight Cursorline   cterm=none   ctermbg=229
-highlight Cursorcolumn cterm=none   ctermbg=229
+highlight Cursorline   cterm=none   ctermfg=243 ctermbg=229
+highlight Cursorcolumn cterm=none   ctermfg=243 ctermbg=229
 highlight String       cterm=none   ctermfg=229  ctermbg=0
 highlight Character    cterm=none   ctermfg=229  ctermbg=0
 highlight Identifier   ctermfg=229
