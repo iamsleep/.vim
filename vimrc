@@ -59,7 +59,8 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 colorscheme gruvbox
 highlight Comment  cterm=none ctermfg=253  ctermbg=0
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=bold ctermfg=247 ctermbg=0
+highlight NonText  cterm=none ctermfg=brown ctermbg=230
+highlight Normal   cterm=none ctermfg=brown  ctermbg=230
 " }}}
 
 " {{{ vim encoding setting
@@ -333,3 +334,4 @@ endfunction
 " map gn to toggle rnu -> nu -> nonu
 nmap gn :call ToggleNumber()<CR>
 " }}}
+
