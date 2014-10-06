@@ -1,3 +1,5 @@
+* reference [color] [1]
+
 Version 1.0.0.8
 - update NonText / Normal color to ctermbg=230
 
@@ -75,3 +77,6 @@ USAGE:
 
 * minibufexpl.vim
     * http://www.vim.org/scripts/script.php?script_id=159
+
+
+[1]: http://aknow-work.blogspot.tw/2013/05/vim-color.html
