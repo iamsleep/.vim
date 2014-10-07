@@ -49,20 +49,25 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 "
 " {{{ gruvbox colorscheme setting
 colorscheme gruvbox
-highlight Comment  cterm=none ctermfg=0  ctermbg=229
+
+highlight Comment  cterm=none ctermfg=0  ctermbg=230
+
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none ctermfg=brown ctermbg=229
-highlight Normal   cterm=none ctermfg=brown  ctermbg=229
-highlight Cursorline   cterm=none   ctermfg=243 ctermbg=229
-highlight Cursorcolumn cterm=none   ctermfg=243 ctermbg=229
+highlight NonText  cterm=none ctermfg=0 ctermbg=230
+highlight Normal   cterm=none ctermfg=0  ctermbg=230
+
+" current cursor line and column color
+highlight Cursorline   cterm=none   ctermfg=243 ctermbg=230
+highlight Cursorcolumn cterm=none   ctermfg=243 ctermbg=230
+
 " set word between quote show transparent
-highlight String       cterm=none   ctermfg=0  ctermbg=229
-highlight Character    cterm=none   ctermfg=229  ctermbg=0
+highlight String       cterm=none   ctermfg=0  ctermbg=230
+highlight Character    cterm=none   ctermfg=230  ctermbg=0
 " like '$varable' color
-highlight Identifier   ctermfg=0    ctermbg=229
+highlight Identifier   ctermfg=0    ctermbg=230
 " set [,],;,'," color
-highlight Special      cterm=none   ctermfg=0  ctermbg=229
-highlight LineNr       cterm=none   ctermfg=0  ctermbg=229
+highlight Special      cterm=none   ctermfg=0  ctermbg=230
+highlight LineNr       cterm=none   ctermfg=0  ctermbg=230
 " }}}
 
 " {{{ vim encoding setting

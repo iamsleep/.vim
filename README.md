@@ -1,3 +1,7 @@
+* Version 1.0.2
+  
+  > update color
+
 * Version 1.0.1
   
   > add syntax/yaml.vim, because it's really slow after using vim7.4 original yaml.vim, so we use new one to ehance 
