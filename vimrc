@@ -57,8 +57,8 @@ highlight NonText  cterm=none ctermfg=0 ctermbg=230
 highlight Normal   cterm=none ctermfg=0  ctermbg=230
 
 " current cursor line and column color
-highlight Cursorline   cterm=none   ctermfg=243 ctermbg=230
-highlight Cursorcolumn cterm=none   ctermfg=243 ctermbg=230
+highlight Cursorline   cterm=none   ctermfg=135 ctermbg=230
+highlight Cursorcolumn cterm=none   ctermfg=135 ctermbg=230
 
 " set word between quote show transparent
 highlight String       cterm=none   ctermfg=0  ctermbg=230
