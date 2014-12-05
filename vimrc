@@ -136,7 +136,6 @@ set incsearch
 "set hlsearch 高亮度反白
 set hlsearch
 set autoindent
-set smartindent
 " show line number
 " this is replace via function ToggleNumber
 "set number
@@ -357,3 +356,7 @@ nmap gn :call ToggleNumber()<CR>
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 " }}}
+
+" fix function onmifunc not found error with AutoComplete
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
