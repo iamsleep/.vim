@@ -356,3 +356,7 @@ nmap gn :call ToggleNumber()<CR>
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 " }}}
+
+" fix function onmifunc not found error with AutoComplete
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
