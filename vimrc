@@ -50,11 +50,11 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 " {{{ gruvbox colorscheme setting
 colorscheme gruvbox
 
-highlight Comment  cterm=none ctermfg=0  ctermbg=230
+highlight Comment  cterm=none ctermfg=0  ctermbg=228
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none ctermfg=0 ctermbg=230
-highlight Normal   cterm=none ctermfg=0  ctermbg=230
+highlight NonText  cterm=none ctermfg=0 ctermbg=228
+highlight Normal   cterm=none ctermfg=0  ctermbg=228
 
 " current cursor line and column color
 highlight Cursorline   cterm=none   ctermfg=135 ctermbg=230
@@ -67,7 +67,7 @@ highlight Character    cterm=none   ctermfg=230  ctermbg=0
 highlight Identifier   ctermfg=0    ctermbg=230
 " set [,],;,'," color
 highlight Special      cterm=none   ctermfg=0  ctermbg=230
-highlight LineNr       cterm=none   ctermfg=0  ctermbg=230
+highlight LineNr       cterm=none   ctermfg=0  ctermbg=228
 " }}}
 
 " {{{ vim encoding setting
@@ -360,3 +360,6 @@ nmap gn :call ToggleNumber()<CR>
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
+
+" set mouse can scroll file
+set mouse=a

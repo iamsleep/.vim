@@ -179,17 +179,6 @@ EnhancedCommentify()	EnhancedCommentify.txt	/*EnhancedCommentify()*
 ExtractSnips()	snipMate.txt	/*ExtractSnips()*
 ExtractSnipsFile()	snipMate.txt	/*ExtractSnipsFile()*
 Filename()	snipMate.txt	/*Filename()*
-GAMP	gtags-and-man-proto.txt	/*GAMP*
-GAMP-commands	gtags-and-man-proto.txt	/*GAMP-commands*
-GAMP-features	gtags-and-man-proto.txt	/*GAMP-features*
-GAMP-gtags	gtags-and-man-proto.txt	/*GAMP-gtags*
-GAMP-mapping	gtags-and-man-proto.txt	/*GAMP-mapping*
-GAMP-mapping-normal	gtags-and-man-proto.txt	/*GAMP-mapping-normal*
-GAMP-notes	gtags-and-man-proto.txt	/*GAMP-notes*
-GAMP-requirements	gtags-and-man-proto.txt	/*GAMP-requirements*
-GAMP-settings	gtags-and-man-proto.txt	/*GAMP-settings*
-GAMP-settings-example	gtags-and-man-proto.txt	/*GAMP-settings-example*
-GAMP-usage	gtags-and-man-proto.txt	/*GAMP-usage*
 HTML-disable-macros	HTML.txt	/*HTML-disable-macros*
 HTML-disable-mappings	HTML.txt	/*HTML-disable-mappings*
 HTML-macros	HTML.txt	/*HTML-macros*
@@ -642,8 +631,6 @@ g:no_html_tab_mapping	HTML.txt	/*g:no_html_tab_mapping*
 g:no_html_toolbar	HTML.txt	/*g:no_html_toolbar*
 g:snippets_dir	snipMate.txt	/*g:snippets_dir*
 g:snips_author	snipMate.txt	/*g:snips_author*
-gtags-and-man-proto	gtags-and-man-proto.txt	/*gtags-and-man-proto*
-gtags-and-man-proto.txt	gtags-and-man-proto.txt	/*gtags-and-man-proto.txt*
 html-<Tab>	HTML.txt	/*html-<Tab>*
 html-CTRL-I	HTML.txt	/*html-CTRL-I*
 html-author-notes	HTML.txt	/*html-author-notes*
