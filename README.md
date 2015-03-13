@@ -1,53 +1,57 @@
+* Version 1.0.3
+
+  > add mouse=a in vimrc which can scroll file
+
 * Version 1.0.2
-  
+
   > update color
 
 * Version 1.0.1
-  
-  > add syntax/yaml.vim, because it's really slow after using vim7.4 original yaml.vim, so we use new one to ehance 
+
+  > add syntax/yaml.vim, because it's really slow after using vim7.4 original yaml.vim, so we use new one to ehance
   > yaml.vim script is from https://github.com/stephpy/vim-yaml
 
 * Version 1.0.0.9
-  
+
   > change String / Special / Identifier color
 
 * Version 1.0.0.8
-  
+
   > update NonText / Normal color to ctermbg=230
 
 * Version 1.0.0.7
-  
+
   > add macro key binding
 
 * Version 1.0.0.6
-  
+
   > add http://www.vim.org/scripts/script.php?script_id=492
 
 * Version 1.0.0.5
-  
+
   > fix vimrc
 
 * Version 1.0.0.4
-  
-  > add star search 
+
+  > add star search
   > http://www.vim.org/scripts/script.php?script_id=4335
 
 * Version 1.0.0.3
-  
+
   > add https://github.com/fholgado/minibufexpl.vim
 
 * Version 1.0.0.2
-  
-  > remove plugin/bufferexploer.vim 
+
+  > remove plugin/bufferexploer.vim
   > because ActivateBuffer fail
 
 * Version 1.0.0.1
-  
-  > change cursor color 
+
+  > change cursor color
   > set line number color
 
 * Version 1.0.0
-  
+
   > init
 
 
@@ -71,7 +75,7 @@
 
 
 * UDPATE in bundle:
-  
+
   > add easymotion
   > add l9 for basic plugin
   > add autocomplete
