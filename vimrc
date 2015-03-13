@@ -207,6 +207,14 @@ set complete-=U complete+=U
 map fu <esc>:FufBuffer<cr>
 " :map <c-w><c-f> :FirstExplorerWindow<cr>
 " :map <c-w><c-b> :BottomExplorerWindow<cr>
+let g:FuzzyFinderOptions = {
+\    'mru_file' : {
+\        'mode_available' : 0
+\    },
+\    'mru_cmd' : {
+\        'mode_available' : 0
+\    }
+\}
 
 " insert mode
 " 補齊括弧
