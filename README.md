@@ -1,3 +1,8 @@
+* Version 1.0.3.1
+
+  > 1. disable fuzzyfinder mru files function which will slow down with buffer more and more bigger
+  > 2. change default background color to black
+
 * Version 1.0.3
 
   > add mouse=a in vimrc which can scroll file

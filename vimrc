@@ -12,10 +12,6 @@ highlight ErrorMsg      term=reverse      ctermbg=Red        ctermfg=White
 highlight Subtitle      ctermfg=brown     ctermbg=gray
 highlight MatchParen    ctermbg=Yellow
 
-
-"colorscheme jellybeans
-"colorscheme gruvbox
-
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 " set cursorline,cursorcolumn and color in move
 set cursorline
@@ -39,7 +35,7 @@ highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
 highlight SpecialKey   cterm=none   ctermfg=249  ctermbg=0
 
 " marker {{{ }}} color
-highlight Folded       cterm=none   ctermfg=249  ctermbg=0
+highlight Folded       cterm=none   ctermfg=253  ctermbg=0
 
 " highlight vim status line
 highlight StatusLine    ctermfg=darkblue  ctermbg=229
@@ -48,26 +44,26 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 " }}}
 "
 " {{{ gruvbox colorscheme setting
-colorscheme gruvbox
+"colorscheme gruvbox
 
-highlight Comment  cterm=none ctermfg=0  ctermbg=228
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none ctermfg=0 ctermbg=228
-highlight Normal   cterm=none ctermfg=0  ctermbg=228
+highlight NonText  cterm=none   ctermfg=0       ctermbg=235
+highlight Normal   cterm=none   ctermfg=113     ctermbg=235
+highlight Comment  cterm=none   ctermfg=147     ctermbg=235
+highlight LineNr   cterm=none   ctermfg=147     ctermbg=235
 
 " current cursor line and column color
-highlight Cursorline   cterm=none   ctermfg=135 ctermbg=230
-highlight Cursorcolumn cterm=none   ctermfg=135 ctermbg=230
+highlight Cursorline   cterm=none   ctermfg=242 ctermbg=249
+highlight Cursorcolumn cterm=none   ctermfg=242 ctermbg=249
 
 " set word between quote show transparent
-highlight String       cterm=none   ctermfg=0  ctermbg=230
-highlight Character    cterm=none   ctermfg=230  ctermbg=0
+highlight String       cterm=none   ctermfg=147 ctermbg=230
+highlight Character    cterm=none   ctermfg=230 ctermbg=0
 " like '$varable' color
 highlight Identifier   ctermfg=0    ctermbg=230
 " set [,],;,'," color
-highlight Special      cterm=none   ctermfg=0  ctermbg=230
-highlight LineNr       cterm=none   ctermfg=0  ctermbg=228
+highlight Special      cterm=none   ctermfg=147  ctermbg=230
 " }}}
 
 " {{{ vim encoding setting
@@ -368,6 +364,3 @@ nmap gn :call ToggleNumber()<CR>
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
-
-" set mouse can scroll file
-set mouse=a
