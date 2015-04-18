@@ -24,8 +24,10 @@ set cursorcolumn
 " highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
 
 " set word between quote show transparent
-highlight String       cterm=none   ctermfg=117  ctermbg=0
-highlight Character    cterm=none   ctermfg=249  ctermbg=0
+highlight String       cterm=none   ctermfg=147  ctermbg=235
+"highlight String       cterm=none   ctermfg=117  ctermbg=0
+highlight Character    cterm=none   ctermfg=147  ctermbg=235
+"highlight Character    cterm=none   ctermfg=249  ctermbg=0
 " set [,],;,'," color
 
 " /word serch word highlight
@@ -48,7 +50,7 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none   ctermfg=0       ctermbg=235
+highlight NonText  cterm=none   ctermfg=147     ctermbg=235
 highlight Normal   cterm=none   ctermfg=113     ctermbg=235
 highlight Comment  cterm=none   ctermfg=147     ctermbg=235
 highlight LineNr   cterm=none   ctermfg=147     ctermbg=235
@@ -58,12 +60,12 @@ highlight Cursorline   cterm=none   ctermfg=242 ctermbg=249
 highlight Cursorcolumn cterm=none   ctermfg=242 ctermbg=249
 
 " set word between quote show transparent
-highlight String       cterm=none   ctermfg=147 ctermbg=230
-highlight Character    cterm=none   ctermfg=230 ctermbg=0
+highlight String       cterm=none   ctermfg=147 ctermbg=235
+highlight Character    cterm=none   ctermfg=147 ctermbg=0
 " like '$varable' color
-highlight Identifier   ctermfg=0    ctermbg=230
+highlight Identifier   ctermfg=0    ctermbg=235
 " set [,],;,'," color
-highlight Special      cterm=none   ctermfg=147  ctermbg=230
+highlight Special      cterm=none   ctermfg=147  ctermbg=235
 " }}}
 
 " {{{ vim encoding setting
