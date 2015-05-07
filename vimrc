@@ -50,9 +50,9 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none   ctermfg=147     ctermbg=235
-highlight Normal   cterm=none   ctermfg=113     ctermbg=235
-highlight Comment  cterm=none   ctermfg=147     ctermbg=235
+highlight NonText  cterm=none   ctermfg=245     ctermbg=235
+highlight Normal   cterm=none   ctermfg=245     ctermbg=235
+highlight Comment  cterm=none   ctermfg=245     ctermbg=235
 highlight LineNr   cterm=none   ctermfg=147     ctermbg=235
 
 " current cursor line and column color
