@@ -18,9 +18,6 @@ set cursorline
 set cursorcolumn
 
 " set line number color
-" highlight LineNr        ctermfg=45
-" highlight LineNr        ctermfg=117
-"highlight LineNr       cterm=none   ctermfg=117  ctermbg=0
 " highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
 
 " set word between quote show transparent
@@ -37,7 +34,7 @@ highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
 highlight SpecialKey   cterm=none   ctermfg=249  ctermbg=0
 
 " marker {{{ }}} color
-highlight Folded       cterm=none   ctermfg=253  ctermbg=0
+highlight Folded       cterm=none   ctermfg=253  ctermbg=237
 
 " highlight vim status line
 highlight StatusLine    ctermfg=darkblue  ctermbg=229
@@ -46,14 +43,13 @@ highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 " }}}
 "
 " {{{ gruvbox colorscheme setting
-"colorscheme gruvbox
 
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
-highlight NonText  cterm=none   ctermfg=245     ctermbg=235
-highlight Normal   cterm=none   ctermfg=245     ctermbg=235
-highlight Comment  cterm=none   ctermfg=245     ctermbg=235
-highlight LineNr   cterm=none   ctermfg=147     ctermbg=235
+highlight NonText  cterm=none   ctermfg=245     ctermbg=252
+highlight Normal   cterm=none   ctermfg=186     ctermbg=252
+highlight Comment  cterm=none   ctermfg=245     ctermbg=252
+highlight LineNr   cterm=none   ctermfg=147     ctermbg=252
 
 " current cursor line and column color
 highlight Cursorline   cterm=none   ctermfg=242 ctermbg=249
@@ -90,6 +86,7 @@ set backupcopy=yes
 set termencoding=utf-8
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 
+"colorscheme gruvbox
 " }}}
 
 " {{{ file type tab set
