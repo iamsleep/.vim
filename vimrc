@@ -41,7 +41,8 @@ highlight StatusLine    ctermfg=darkblue  ctermbg=229
 highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
 
 " }}}
-"
+
+
 " {{{ gruvbox colorscheme setting
 
 
@@ -64,7 +65,9 @@ highlight Identifier   ctermfg=0    ctermbg=235
 highlight Special      cterm=none   ctermfg=147  ctermbg=235
 " }}}
 
-colorscheme molokai
+set background=dark
+colorscheme solarized
+
 " {{{ vim encoding setting
 """
 """ ref: http://blog.yzlin.org/2008/05/14/22/
