@@ -65,8 +65,10 @@ highlight Identifier   ctermfg=0    ctermbg=228
 highlight Special      cterm=none   ctermfg=147  ctermbg=228
 " }}}
 
-"set background=dark
+set background=dark
 "colorscheme solarized
+colorscheme solarized
+"colorscheme gruvbox
 
 " {{{ vim encoding setting
 """
@@ -89,7 +91,6 @@ set backupcopy=yes
 set termencoding=utf-8
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 
-"colorscheme gruvbox
 " }}}
 
 " {{{ file type tab set

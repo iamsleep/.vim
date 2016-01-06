@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/iamsleep/.git_template'
-let g:netrw_dirhist_2='/home/iamsleep/.git_template/hooks'
-let g:netrw_dirhist_3='/mnt/home.ac.corp.tw1.yahoo.com/homes/iamsleep/git/mydev/GorkaLaucirica/HipchatAPIv2Client/API'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/component_ecpayment_report/src/report2/Model/RPT00079'
-let g:netrw_dirhist_5='/home/iamsleep/git-my/component_ecpayment_report/src/report2/Model/RPT00079/Download'
-let g:netrw_dirhist_6='/home/iamsleep/git-my/component_ecpayment_logistics_api'
-let g:netrw_dirhist_7='/home/iamsleep/git-my/component_ecpayment_config'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/iamsleep/git-my/component_ecpayment_logistics_batch/src'
