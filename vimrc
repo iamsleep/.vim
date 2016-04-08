@@ -21,10 +21,6 @@ set cursorcolumn
 " highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
 
 " set word between quote show transparent
-highlight String       cterm=none   ctermfg=147  ctermbg=235
-"highlight String       cterm=none   ctermfg=117  ctermbg=0
-highlight Character    cterm=none   ctermfg=147  ctermbg=235
-"highlight Character    cterm=none   ctermfg=249  ctermbg=0
 " set [,],;,'," color
 
 " /word serch word highlight
@@ -66,7 +62,6 @@ highlight Special      cterm=none   ctermfg=147  ctermbg=228
 " }}}
 
 set background=dark
-"colorscheme solarized
 colorscheme solarized
 "colorscheme gruvbox
 
@@ -368,3 +363,9 @@ nmap gn :call ToggleNumber()<CR>
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
+
+
+
+" http://stackoverflow.com/questions/3686841/vim-case-insensitive-filename-completion
+" set filename completion case-insensitive
+set wildignorecase

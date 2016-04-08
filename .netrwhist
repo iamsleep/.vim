@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/iamsleep/git-my/component_ecpayment_logistics_batch/src'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/iamsleep/git-my/ecpayment/auto_renewal/billing2/charge_fedex'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/subsystem_ecpayment_tool/release_definition'
+let g:netrw_dirhist_3='/home/iamsleep/git-my/subsystem_ecpayment_tool/release_definition/common'
