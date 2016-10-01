@@ -24,7 +24,7 @@ set cursorcolumn
 " set [,],;,'," color
 
 " /word serch word highlight
-highlight Search       cterm=none   ctermfg=0    ctermbg=Yellow
+highlight Search       cterm=none   ctermfg=199    ctermbg=0
 
 " special key like :q<Enter>
 highlight SpecialKey   cterm=none   ctermfg=249  ctermbg=0
@@ -34,7 +34,7 @@ highlight Folded       cterm=none   ctermfg=253  ctermbg=237
 
 " highlight vim status line
 highlight StatusLine    ctermfg=darkblue  ctermbg=229
-highlight StatusLineNC  ctermfg=brown     ctermbg=darkblue
+highlight StatusLineNC  ctermfg=brown     ctermbg=229
 
 " }}}
 
