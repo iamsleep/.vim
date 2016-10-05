@@ -62,7 +62,7 @@ highlight Special      cterm=none   ctermfg=147  ctermbg=228
 set background=dark
 " current cursor line and column color
 highlight Cursorline   cterm=none   ctermfg=228 ctermbg=151
-highlight Cursorcolumn cterm=none   ctermfg=228 ctermbg=151
+"highlight Cursorcolumn cterm=none   ctermfg=228 ctermbg=151
 " }}}
 
 
