@@ -61,7 +61,7 @@ highlight Special      cterm=none   ctermfg=147  ctermbg=228
 
 set background=dark
 " current cursor line and column color
-highlight Cursorline   cterm=none   ctermfg=228 ctermbg=151
+"highlight Cursorline   cterm=none   ctermfg=228 ctermbg=151
 "highlight Cursorcolumn cterm=none   ctermfg=228 ctermbg=151
 " }}}
 
@@ -370,3 +370,10 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 " http://stackoverflow.com/questions/3686841/vim-case-insensitive-filename-completion
 " set filename completion case-insensitive
 set wildignorecase
+
+
+" fix slow scrolling in vim
+" ref http://eduncan911.com/software/fix-slow-scrolling-in-vim-and-neovim.html
+set lazyredraw
+set synmaxcol=128
+syntax sync minlines=256
