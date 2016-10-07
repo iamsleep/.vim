@@ -377,3 +377,6 @@ set wildignorecase
 set lazyredraw
 set synmaxcol=128
 syntax sync minlines=256
+
+" append FZF
+set rtp+=~/bash/fzf/
