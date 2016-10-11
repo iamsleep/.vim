@@ -281,8 +281,7 @@ let g:DeleteTrailingWhitespace_ChoiceAffectsHighlighting = 1
 
 " {{{ vim macro for php
 nnoremap <Leader>error oerror_log(__FILE__ . " line: " . __LINE__ . "\n", 3, '/tmp/derek.log');<esc>
-nnoremap <Leader>print oerror_log(print_r( $res, 1) . "\n", 3, '/tmp/derek.log');<esc>
-nnoremap <Leader>format o/* vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4: */<esc>
+nnoremap <Leader>print oerror_log(var_export( $res, 1) . "\n", 3, '/tmp/derek.log');<esc>
 " }}}
 
 " {{{ global key mapping
