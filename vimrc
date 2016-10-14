@@ -14,8 +14,8 @@ highlight MatchParen    ctermbg=Yellow
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 " set cursorline,cursorcolumn and color in move
-set cursorline
-set cursorcolumn
+"set cursorline
+"set cursorcolumn
 
 " set line number color
 " highlight CursorLineNr cterm=none   ctermfg=38    ctermbg=0
