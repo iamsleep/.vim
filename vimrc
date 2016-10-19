@@ -363,6 +363,7 @@ nmap gn :call ToggleNumber()<CR>
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
+autocmd FileType make setlocal noexpandtab
 
 
 
