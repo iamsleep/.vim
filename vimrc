@@ -81,12 +81,7 @@ set fileencoding=utf-8
 set termencoding=utf-8
 " 將 unicode 中不確定的字符表示成雙字符，在 unicode 下才有用
 set ambiwidth=double
-
 set backupcopy=yes
-"set encoding=big5
-set termencoding=utf-8
-set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
-
 " }}}
 
 " {{{ file type tab set
@@ -363,7 +358,7 @@ nmap gn :call ToggleNumber()<CR>
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
-autocmd FileType make setlocal noexpandtab
+autocmd FileType make set noexpandtab
 
 
 
