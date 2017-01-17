@@ -328,6 +328,7 @@ function! ToggleNumber()
         let s:number_setting = 1
     elseif s:number_setting == 1
         set number
+        set norelativenumber
         let s:number_setting = 2
     else
         set nonumber
