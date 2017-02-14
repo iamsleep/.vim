@@ -376,3 +376,6 @@ syntax sync minlines=256
 
 " append FZF
 set rtp+=~/bash/fzf/
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf.vim'
+call plug#end()
