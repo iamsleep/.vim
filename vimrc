@@ -189,24 +189,6 @@ let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 "set modeline
 " }}}
 
-" {{{ vim plugin fuzzyfinder key biding
-" map ft <esc>:FufTag<cr>
-" map ff <esc>:FufFile<cr>
-" map fcd <esc>:FufDir<cr>
-" map fba <esc>:FufAddBookmark<cr>
-" map fbl <esc>:FufBookmark<cr>
-map fu <esc>:FufBuffer<cr>
-" :map <c-w><c-f> :FirstExplorerWindow<cr>
-" :map <c-w><c-b> :BottomExplorerWindow<cr>
-let g:FuzzyFinderOptions = {
-\    'mru_file' : {
-\        'mode_available' : 0
-\    },
-\    'mru_cmd' : {
-\        'mode_available' : 0
-\    }
-\}
-
 " insert mode
 " 補齊括弧
 " 語法
@@ -379,3 +361,12 @@ set rtp+=~/bash/fzf/
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf.vim'
 call plug#end()
+
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+let g:fzf_buffers_jump = 1
+let g:fzf_command_prefix = 'G'
+map fu <esc>:GBuffers<cr>
