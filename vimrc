@@ -189,42 +189,6 @@ let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 "set modeline
 " }}}
 
-" insert mode
-" 補齊括弧
-" 語法
-" inoremap  triger_char  mapping_str
-" 映射指令     觸發字元     映射字串
-"inoremap ( ()<LEFT>
-"inoremap [ []<LEFT>
-"inoremap { {}<LEFT>
-"inoremap ' ''<LEFT>
-"inoremap " ""<LEFT>
-
-"    C-x C-l         行補齊
-"    C-x C-n         以目前檔案做關鍵字補齊
-"    C-x C-k         由字典補齊
-"    C-x C-t         由分類詞庫補齊
-"    C-x C-i         從目前以及被引入的檔案為來源做關鍵字補齊
-"    C-x C-]         標籤 (tags) 補齊
-"    C-x C-f         檔案名稱補齊
-"    C-x C-d         定義或巨集補齊
-"    C-x C-v         Vim 指令補齊
-"    C-x C-u         使用者定義函式補齊
-"    C-x C-o         全補齊函式做補齊
-"    C-x s           拼字校正補齊
-"    C-n             關鍵字補齊，不過依據 `complete` 選項來決定關鍵字來源
-"    alt + e is ctrl+v and alt+e
-"imap e <c-x><c-i>
-"imap w <c-x><c-o>
-
-" insert mode bind InsertChange
-" function s:AutoCompleteSave()
-"    "call writefile(inputsecret(),".vim/dict/worddict");
-"    echo tempname()
-" endfunction
-" autocmd InsertLeave * call s:AutoCompleteSave()
-" }}}
-
 " {{{ vim return to last edit line
 if has("autocmd")
    autocmd BufRead *.txt set tw=78
