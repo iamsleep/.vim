@@ -171,7 +171,7 @@ let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 " {{{ set dictionary content
 "set dictionary-=~/.vim/dictionary dictionary+=~/.vim/dict/phpdict
 "set complete-=k complete+=k
-set complete-=U complete+=U
+"set complete-=U complete+=U
 "set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
 "autocmd FileType * exe('setlocal dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
 " }}}
