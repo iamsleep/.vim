@@ -332,5 +332,9 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 let g:fzf_buffers_jump = 1
-let g:fzf_command_prefix = 'G'
-map fu <esc>:GBuffers<cr>
+let g:fzf_command_prefix = 'FZF'
+map buf <esc>:FZFBuffers<cr>
+nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
+nnoremap fhi :execute 'FZFHistory'<esc>
+nnoremap chi :execute 'FZFHistory:'<esc>
+nnoremap shi :execute 'FZFHistory/'<esc>
