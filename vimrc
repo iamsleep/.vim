@@ -165,7 +165,7 @@ endif
 " 1. 增加預設搜尋範圍
 " 2. add Snipmate template mapping
 "
-let g:acp_completeOption = '.,w,k,w,b,u,t,i'
+"let g:acp_completeOption = '.,w,k,w,b,u,t,i'
 " }}}
 
 " {{{ set dictionary content
@@ -198,17 +198,15 @@ if has("autocmd")
       \ endif
 endif
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/syntax/yaml.vim
-
 " }}}
 
 " {{{ pathogen setting
 "
 " plugin pathogen
 " manage plugin in vim
-"call pathogen#infect()
+call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
 " }}}
 
 " {{{ vim plugin delete trailing white space
@@ -287,21 +285,6 @@ endfunction
 nmap gn :call ToggleNumber()<CR>
 " }}}
 
-" {{{ easymotion
-"nmap s <Plug>(easymotion-s2)
-"nmap t <Plug>(easymotion-t2)
-"
-"" Gif config
-"map  / <Plug>(easymotion-sn)
-"omap / <Plug>(easymotion-tn)
-"
-"" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
-"" Without these mappings, `n` & `N` works fine. (These mappings just provide
-"" different highlight method and have some other features )
-"map  n <Plug>(easymotion-next)
-"map  N <Plug>(easymotion-prev)
-" }}}
-
 " fix function onmifunc not found error with AutoComplete
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
@@ -338,3 +321,4 @@ nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
 nnoremap fhi :execute 'FZFHistory'<esc>
 nnoremap chi :execute 'FZFHistory:'<esc>
 nnoremap shi :execute 'FZFHistory/'<esc>
+" end append FZF
