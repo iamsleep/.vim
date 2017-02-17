@@ -289,12 +289,13 @@ nmap gn :call ToggleNumber()<CR>
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags noci
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags noci
 autocmd FileType make set noexpandtab
-
+" end fix
 
 
 " http://stackoverflow.com/questions/3686841/vim-case-insensitive-filename-completion
 " set filename completion case-insensitive
 set wildignorecase
+" end set
 
 
 " fix slow scrolling in vim
@@ -302,6 +303,7 @@ set wildignorecase
 set lazyredraw
 set synmaxcol=128
 syntax sync minlines=256
+" end fix slow
 
 " append FZF
 set rtp+=~/bash/fzf/
