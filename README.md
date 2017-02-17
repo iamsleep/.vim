@@ -1,3 +1,12 @@
+* build command
+cd vim && ./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.6/config \
+            --prefix=/home/iamsleep/local
+
+
 * Version 1.0.3.1
 
   > 1. disable fuzzyfinder mru files function which will slow down with buffer more and more bigger
