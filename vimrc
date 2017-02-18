@@ -317,22 +317,9 @@ Plug 'https://github.com/Shougo/neosnippet-snippets'
 call plug#end()
 " end setting
 
-" append FZF
-set rtp+=~/bash/fzf/
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
-
-let g:fzf_buffers_jump = 1
-let g:fzf_command_prefix = 'FZF'
-map fu <esc>:FZFBuffers<cr>
-nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
-nnoremap fhi :execute 'FZFHistory'<esc>
-nnoremap chi :execute 'FZFHistory:'<esc>
-nnoremap shi :execute 'FZFHistory/'<esc>
-" end append FZF
+" fzf
+source /home/iamsleep/.vim/config/fzf.vim
 
 " neocomplete
-source /home/iamsleep/.vim/neocomplete.config.vim
-source /home/iamsleep/.vim/neosnippet.config.vim
+source /home/iamsleep/.vim/config/neocomplete.vim
+source /home/iamsleep/.vim/config/neosnippet.vim
