@@ -305,12 +305,20 @@ set synmaxcol=128
 syntax sync minlines=256
 " end fix slow
 
+" vim-plug setting
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'https://github.com/Shougo/neosnippet.vim'
+Plug 'https://github.com/Shougo/neocomplete.vim'
+Plug 'https://github.com/Shougo/neosnippet-snippets'
+
+call plug#end()
+" end setting
+
 " append FZF
 set rtp+=~/bash/fzf/
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf.vim'
-call plug#end()
-
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
@@ -318,9 +326,13 @@ let g:fzf_action = {
 
 let g:fzf_buffers_jump = 1
 let g:fzf_command_prefix = 'FZF'
-map buf <esc>:FZFBuffers<cr>
+map fu <esc>:FZFBuffers<cr>
 nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
 nnoremap fhi :execute 'FZFHistory'<esc>
 nnoremap chi :execute 'FZFHistory:'<esc>
 nnoremap shi :execute 'FZFHistory/'<esc>
 " end append FZF
+
+" neocomplete
+source /home/iamsleep/.vim/neocomplete.config.vim
+source /home/iamsleep/.vim/neosnippet.config.vim
