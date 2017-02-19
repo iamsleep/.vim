@@ -19,4 +19,3 @@ source /home/iamsleep/.vim/config/relativenumber.vim
 source /home/iamsleep/.vim/config/fzf.vim
 source /home/iamsleep/.vim/config/neocomplete.vim
 source /home/iamsleep/.vim/config/neosnippet.vim
-source /home/iamsleep/.vim/config/phpcomplete.vim
