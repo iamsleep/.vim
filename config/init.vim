@@ -1,5 +1,7 @@
 syntax on
 set nocompatible  " no compatible with vi
+set path=**
+set complete-=i " remove include fine from complete
 
 " {{{ file type tab set
 "autocmd FileType make setlocal noexpandtab
