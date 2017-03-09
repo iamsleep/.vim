@@ -1,5 +1,7 @@
 syntax on
 set nocompatible  " no compatible with vi
+set path=**
+set complete-=i " remove include fine from complete
 
 " {{{ file type tab set
 "autocmd FileType make setlocal noexpandtab
@@ -43,7 +45,7 @@ set ignorecase
 set incsearch
 "set hlsearch 高亮度反白
 set hlsearch
-set autoindent
+"set autoindent
 " show line number
 " this is replace via function ToggleNumber
 "set number
