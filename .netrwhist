@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/iamsleep/git-my/ecpayment/ec_c2c/conf/ec_c2c_client'
-let g:netrw_dirhist_2='/home/iamsleep/bash/fzf/bin'
-let g:netrw_dirhist_3='/home/iamsleep/git-my/api-performance'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/component_auctions_lib_ydbsclient/screwdriver'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/iamsleep/local/phpmd/vendor/bin'
+let g:netrw_dirhist_2='/home/iamsleep/.vim/bundle/vim-easymotion'
+let g:netrw_dirhist_3='/home/iamsleep/.vim/plugged/fzf.vim'

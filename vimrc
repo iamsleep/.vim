@@ -6,9 +6,6 @@ source /home/iamsleep/.vim/config/encoding.vim
 source /home/iamsleep/.vim/config/filetype.vim
 source /home/iamsleep/.vim/config/vimplug.vim
 source /home/iamsleep/.vim/config/pathogen.vim
-
-filetype plugin indent on    " required
-
 source /home/iamsleep/.vim/config/deletewhitespace.vim
 source /home/iamsleep/.vim/config/phpmacro.vim
 source /home/iamsleep/.vim/config/gnuglobal.vim
