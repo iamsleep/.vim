@@ -45,7 +45,11 @@ set ignorecase
 set incsearch
 "set hlsearch 高亮度反白
 set hlsearch
+" autoindent 选项根据上一行决定新行的缩进
+" smartindent 选项智能自动缩进
+" expandtab 选项将 tab 转换为空格
 set autoindent
+set smartindent
 " show line number
 " this is replace via function ToggleNumber
 "set number
