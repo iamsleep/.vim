@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/iamsleep/bash/powerline'
-let g:netrw_dirhist_2='/home/iamsleep/bash'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/iamsleep/git-my/component_auction2_frontend_yala/conf'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/component_auction2_frontend_yala/conf/result'
+let g:netrw_dirhist_3='/home/iamsleep/git-my/component_auction2_frontend_yala/conf/result/yrb'
+let g:netrw_dirhist_4='/home/iamsleep/git-my/component_ecpayment_tool/screwdriver'
+let g:netrw_dirhist_5='/home/iamsleep/git-my/component_ecpayment_eps_sd/tests/unit'
+let g:netrw_dirhist_6='/home/iamsleep/git-my/component_ecpayment_eps_sd/tests/unit/crypto'
+let g:netrw_dirhist_7='/home/iamsleep/git-my/subsystem_ecpayment_tool'
