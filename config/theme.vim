@@ -48,7 +48,7 @@ highlight Identifier   ctermfg=0    ctermbg=228
 " set [,],;,'," color
 highlight Special      cterm=none   ctermfg=147  ctermbg=228
 
-set background=dark
+set background=light
 
 " change statement color, like if,else in php,c and highlight in vimrc, etc.
 set cursorline
