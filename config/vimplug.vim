@@ -6,7 +6,9 @@ Plug 'https://github.com/Shougo/neocomplete.vim'
 Plug 'https://github.com/Shougo/neosnippet.vim'
 Plug 'https://github.com/Shougo/neosnippet-snippets'
 Plug 'https://github.com/honza/vim-snippets'
-Plug 'shawncplus/phpcomplete.vim'
+Plug 'https://github.com/shawncplus/phpcomplete.vim'
 Plug 'https://github.com/easymotion/vim-easymotion'
+Plug 'https://github.com/Shougo/vimproc.vim'
+Plug 'https://github.com/m2mdas/phpcomplete-extended'
 
 call plug#end()

@@ -78,3 +78,5 @@ inoremap <expr><C-F> neocomplete#start_manual_complete('omni')
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+let g:neocomplete#use_vimproc=1
