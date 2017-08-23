@@ -10,5 +10,6 @@ Plug 'https://github.com/shawncplus/phpcomplete.vim'
 Plug 'https://github.com/easymotion/vim-easymotion'
 Plug 'https://github.com/Shougo/vimproc.vim'
 Plug 'https://github.com/m2mdas/phpcomplete-extended'
+Plug 'https://github.com/Yggdroot/indentLine'
 
 call plug#end()

@@ -16,5 +16,6 @@ source /home/iamsleep/.vim/config/fzf.vim
 source /home/iamsleep/.vim/config/neocomplete.vim
 source /home/iamsleep/.vim/config/neosnippet.vim
 source /home/iamsleep/.vim/config/vim-easy-align.vim
+source /home/iamsleep/.vim/config/indentLine.vim
 
 filetype plugin indent on
