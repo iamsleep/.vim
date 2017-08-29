@@ -14,3 +14,5 @@ let g:indentLine_color_dark = 1 " (default: 2)
 " document : http://vimdoc.sourceforge.net/htmldoc/options.html#'conceallevel'
 let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
+
+nmap gi :IndentLinesToggle<CR>
