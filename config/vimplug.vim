@@ -11,5 +11,7 @@ Plug 'https://github.com/easymotion/vim-easymotion'
 Plug 'https://github.com/Shougo/vimproc.vim'
 Plug 'https://github.com/m2mdas/phpcomplete-extended'
 Plug 'https://github.com/Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
