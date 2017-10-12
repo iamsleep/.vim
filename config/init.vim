@@ -115,3 +115,4 @@ set synmaxcol=128
 syntax sync minlines=256
 " end fix slow
 
+noremap <C-g> <C-a>
