@@ -13,5 +13,7 @@ Plug 'https://github.com/m2mdas/phpcomplete-extended'
 Plug 'https://github.com/Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'trevordmiller/nova-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 
 call plug#end()

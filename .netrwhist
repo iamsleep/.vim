@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/iamsleep/bash'
-let g:netrw_dirhist_2='/home/iamsleep/git-my/subsystem_ecpayment_frontend/release_definition'
-let g:netrw_dirhist_3='/home/iamsleep/git-my/subsystem_ecpayment_frontend/release_definition/common'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/component_ecpayment_auto_renewal/screwdriver'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/iamsleep/bash/brew/Library/Homebrew/cask/lib/hbc/source'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/component_ecpayment_internal_webservice_ccp/screwdriver'
+let g:netrw_dirhist_3='/home/iamsleep/git-my/component_ecpayment_c2c_frontend/src/templates/generic_intl/all/c2c_csr/config/env'
+let g:netrw_dirhist_4='/home/iamsleep/git-my/step-git-create-issue/files'
+let g:netrw_dirhist_5='/home/iamsleep/git-my/step-git-create-issue/scripts'

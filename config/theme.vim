@@ -30,7 +30,6 @@ highlight Folded       cterm=none   ctermfg=253  ctermbg=237
 highlight StatusLine    ctermfg=darkblue  ctermbg=229
 highlight StatusLineNC  ctermfg=brown     ctermbg=229
 
-"colorscheme solarized
 
 " http://stackoverflow.com/questions/903934/unable-to-make-gray-eol-character-by-vimrc
 "highlight NonText  cterm=none   ctermfg=245     ctermbg=228
@@ -57,3 +56,5 @@ set cursorline
 " current cursor line and column color
 "highlight Cursorline   cterm=none   ctermfg=15 ctermbg=15
 "highlight Cursorcolumn cterm=none   ctermfg=15 ctermbg=15
+
+colorscheme nova
