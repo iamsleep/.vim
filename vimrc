@@ -18,6 +18,7 @@ source /home/iamsleep/.vim/config/neosnippet.vim
 source /home/iamsleep/.vim/config/vim-easy-align.vim
 source /home/iamsleep/.vim/config/indentLine.vim
 source /home/iamsleep/.vim/config/go.vim
+source /home/iamsleep/.vim/config/vim-markdown.vim
 
 filetype plugin indent on
 set termguicolors

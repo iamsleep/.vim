@@ -16,5 +16,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'trevordmiller/nova-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'https://github.com/fatih/vim-go'
+Plug 'https://github.com/plasticboy/vim-markdown'
 
 call plug#end()
