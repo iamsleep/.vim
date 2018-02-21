@@ -1,7 +1,7 @@
-##############################################################################
-### https://github.com/vim-airline/vim-airline/blob/master/doc/airline.txt#L83
-### all setting doc description here
-##############################################################################
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://github.com/vim-airline/vim-airline/blob/master/doc/airline.txt#L83
+" all setting doc description here
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_highlighting_cache = 1
 let g:airline_theme='molokai'
 let g:airline_powerline_fonts = 1
