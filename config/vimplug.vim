@@ -18,5 +18,6 @@ Plug 'trevordmiller/nova-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'https://github.com/fatih/vim-go'
 Plug 'https://github.com/plasticboy/vim-markdown'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
