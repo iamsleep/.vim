@@ -13,7 +13,11 @@ Plug 'https://github.com/m2mdas/phpcomplete-extended'
 Plug 'https://github.com/Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 Plug 'trevordmiller/nova-vim'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'https://github.com/fatih/vim-go'
+Plug 'https://github.com/plasticboy/vim-markdown'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()

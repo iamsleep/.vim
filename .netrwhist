@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/iamsleep/bash/brew/Library/Homebrew/cask/lib/hbc/source'
-let g:netrw_dirhist_2='/home/iamsleep/git-my/component_ecpayment_internal_webservice_ccp/screwdriver'
-let g:netrw_dirhist_3='/home/iamsleep/git-my/component_ecpayment_c2c_frontend/src/templates/generic_intl/all/c2c_csr/config/env'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/step-git-create-issue/files'
-let g:netrw_dirhist_5='/home/iamsleep/git-my/step-git-create-issue/scripts'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/iamsleep/git-my/swagger-ui-checkout_api/src'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/swagger-ui-checkout_api'
+let g:netrw_dirhist_3='/home/iamsleep/git-my/component_nevec_egs_ecid_client/tests/smoke-test'
+let g:netrw_dirhist_4='/home/iamsleep/git-my/component_ec_api_auction_api_checkout/conf/includes'
+let g:netrw_dirhist_5='/home/iamsleep/.config/powerline'
+let g:netrw_dirhist_6='/home/iamsleep/bash/powerline_config'
+let g:netrw_dirhist_7='/home/iamsleep/.config/powerline'
