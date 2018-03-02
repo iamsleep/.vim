@@ -1,3 +1,7 @@
+""""""""""""""""""""""""""""""""""""""
+" http://www.zerophp.cn/archives/411/
+""""""""""""""""""""""""""""""""""""""
+
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 " 不显示开启vim时检查ycm_extra_conf文件的信息
 let g:ycm_confirm_extra_conf = 0
