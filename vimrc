@@ -22,4 +22,4 @@ source /home/iamsleep/.vim/config/vim-markdown.vim
 "source /home/iamsleep/.vim/config/ycm.vim
 
 filetype plugin indent on
-set termguicolors
+"set termguicolors
