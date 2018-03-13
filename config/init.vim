@@ -84,11 +84,14 @@ endif
 
 " vim return to last edit line
 if has("autocmd")
-   autocmd BufRead *.txt set tw=78
-   autocmd BufReadPost *
-      \ if line("'\"") > 0 && line ("'\"") <= line("$") |
-      \   exe "normal g'\"" |
-      \ endif
+    augroup vimrc_stayput
+        autocmd BufRead *.txt set tw=78
+        autocmd BufReadPost *
+           \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+           \   exe "normal g'\"" |
+           \ endif |
+           \ autocmd! vimrc_stayput CursorMoved,CursorMovedI
+   augroup END
 endif
 
 " These two options together determine the behavior when part of a

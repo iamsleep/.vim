@@ -1,9 +1,9 @@
-set relativenumber
+"set relativenumber
 let s:number_setting = 1
 
 function! ToggleNumber()
     if s:number_setting == 0
-        set relativenumber
+        "set relativenumber
         let s:number_setting = 1
     elseif s:number_setting == 1
         set number

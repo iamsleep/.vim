@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/iamsleep/git-my/swagger-ui-checkout_api/src'
-let g:netrw_dirhist_2='/home/iamsleep/git-my/swagger-ui-checkout_api'
-let g:netrw_dirhist_3='/home/iamsleep/git-my/component_nevec_egs_ecid_client/tests/smoke-test'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/component_ec_api_auction_api_checkout/conf/includes'
-let g:netrw_dirhist_5='/home/iamsleep/.config/powerline'
-let g:netrw_dirhist_6='/home/iamsleep/bash/powerline_config'
-let g:netrw_dirhist_7='/home/iamsleep/.config/powerline'
-let g:netrw_dirhist_8='/home/iamsleep/bash/powerline_config/themes'
-let g:netrw_dirhist_9='/home/iamsleep/git-my/component_ecpayment_sms/src/libraries/ysecure'
+let g:netrw_dirhist_cnt =0
