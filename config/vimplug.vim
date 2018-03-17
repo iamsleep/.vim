@@ -13,12 +13,8 @@ Plug 'm2mdas/phpcomplete-extended'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
 Plug 'trevordmiller/nova-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'fatih/vim-go'
-Plug 'plasticboy/vim-markdown'
-"Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
