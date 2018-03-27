@@ -68,7 +68,7 @@ set cinoptions=>s,e0,n0,f0,{0,}0,^0,:0,=s,ps,t0,+s,(0,U1,us,)20,*30,g0
 " '20 is save mark which max is 20
 " % is buffers list
 " :30 is the lines in history record to be saved
-set viminfo='20,\"100,:30,%,n~/.viminfo
+"set viminfo='20,\"100,:30,%,n~/.viminfo
 
 " make vim's auto-complete behave like bash's default auto-complete in edit
 set wildmenu
