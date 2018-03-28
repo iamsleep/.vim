@@ -16,5 +16,7 @@ let g:deoplete#enable_at_startup = 1
 "Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 "let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
 "let g:deoplete#ignore_sources.php = ['omni']
+"
+Plug 'ozelentok/deoplete-gtags'
 
 call plug#end()
