@@ -1,10 +1,10 @@
 syntax on
+
 set nocompatible  " no compatible with vi
 set path=**
 set complete-=i " remove include fine from complete
 set termguicolors
 
-" {{{ file type tab set
 "autocmd FileType make setlocal noexpandtab
 "autocmd FileType make set noexpandtab
 "autocmd FileType make set shiftwidth=8
@@ -17,7 +17,6 @@ set softtabstop=4
 " 設置縮進的空格數為
 " "Indent by 4 spaces when using >>, <<, == etc.
 set shiftwidth=4
-" }}}
 
 " {{{ vim display setting
 set laststatus=2
@@ -107,7 +106,6 @@ endif
 "set timeout timeoutlen=1000 ttimeoutlen=100
 set showcmd " this cmd will replace before  deleteTrailingWhiteSpace
 
-
 " set filename completion case-insensitive
 " http://stackoverflow.com/questions/3686841/vim-case-insensitive-filename-completion
 set wildignorecase
@@ -115,8 +113,5 @@ set wildignorecase
 " fix slow scrolling in vim
 " ref http://eduncan911.com/software/fix-slow-scrolling-in-vim-and-neovim.html
 set lazyredraw
-"set synmaxcol=128
-"syntax sync minlines=256
-" end fix slow
 
 noremap <C-g> <C-a>
