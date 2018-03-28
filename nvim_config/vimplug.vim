@@ -13,4 +13,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:python3_host_prog='/home/iamsleep/local/bin/python3.6'
 let g:deoplete#enable_at_startup = 1
 
+"Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+"let g:deoplete#ignore_sources = get(g:, 'deoplete#ignore_sources', {})
+"let g:deoplete#ignore_sources.php = ['omni']
+
 call plug#end()
