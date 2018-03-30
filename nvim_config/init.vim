@@ -115,3 +115,6 @@ set wildignorecase
 set lazyredraw
 
 noremap <C-g> <C-a>
+
+" https://stackoverflow.com/questions/808298/how-can-i-add-non-mouse-selectable-line-numbers-to-vim
+set mouse=a
