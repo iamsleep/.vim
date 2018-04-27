@@ -1,9 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/iamsleep'
-let g:netrw_dirhist_2='/'
-let g:netrw_dirhist_3='/home/iamsleep/.config'
-let g:netrw_dirhist_4='/home/iamsleep/git-my/swagger-ui-checkout_api/api-spec'
-let g:netrw_dirhist_5='/home/iamsleep/git-my/component_ecpayment_eps_session/src/client'
-let g:netrw_dirhist_6='/home/iamsleep/git-my/serviceplus_order/src/order/pigeon'
-let g:netrw_dirhist_7='/home/iamsleep/.vim/plugged/nvim-completion-manager/autoload/cm/sources'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/home/iamsleep/git-my/credit_card_payment_ws/screwdriver'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/credit_card_payment_ws/cloudformation'
