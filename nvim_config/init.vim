@@ -52,7 +52,6 @@ set autoindent
 set smartindent
 " show line number
 " this is replace via function ToggleNumber
-"set number
 
 "   當 backspace 為 2 時，就是可以刪除任意值；0 或 1
 "   時，僅可刪除剛剛輸入的字元， 而無法刪除原本就已經存在的文字了
