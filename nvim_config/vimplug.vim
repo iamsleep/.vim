@@ -17,4 +17,7 @@ Plug 'ozelentok/deoplete-gtags'
 
 " colorscheme
 Plug 'mhinz/vim-janah'
+
+" rust
+Plug 'rust-lang/rust.vim'
 call plug#end()

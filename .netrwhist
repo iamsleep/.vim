@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/iamsleep/git-my/credit_card_payment_ws/screwdriver'
-let g:netrw_dirhist_2='/home/iamsleep/git-my/credit_card_payment_ws/cloudformation'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/iamsleep/git-my/component_auction2_event_handler_order_cancel/tests/unit'
+let g:netrw_dirhist_2='/home/iamsleep/git-my/subsystem_auction2checkout_api/release_definition/resources/prod_tp2/image'
+let g:netrw_dirhist_3='/home/iamsleep/git-my/subsystem_auction2checkout_api/release_definition/resources/pp_tw1/image'
+let g:netrw_dirhist_4='/home/iamsleep/git-my/component_token_service_webapp/screwdriver'
