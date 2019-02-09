@@ -20,4 +20,5 @@ Plug 'mhinz/vim-janah'
 
 " rust
 Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
 call plug#end()

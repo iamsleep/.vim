@@ -16,5 +16,6 @@ source /home/iamsleep/.vim/nvim_config/fzf.vim
 source /home/iamsleep/.vim/nvim_config/vim-easy-align.vim
 source /home/iamsleep/.vim/nvim_config/indentLine.vim
 source /home/iamsleep/.vim/nvim_config/go.vim
+source /home/iamsleep/.vim/nvim_config/rust.vim
 
 filetype plugin indent on
