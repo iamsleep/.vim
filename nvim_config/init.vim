@@ -4,6 +4,7 @@ set nocompatible  " no compatible with vi
 set path=**
 set complete-=i " remove include fine from complete
 set termguicolors
+set regexpengine=1
 
 "autocmd FileType make setlocal noexpandtab
 "autocmd FileType make set noexpandtab
