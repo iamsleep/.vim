@@ -6,6 +6,10 @@ cd vim && ./configure --with-features=huge \
             --with-python-config-dir=/usr/lib/python2.6/config \
             --prefix=/home/iamsleep/local
 
+* Version 2.0.1
+
+  > update nova vim color to 1C1C1C
+  > update color plugged/vim-airline-themes/autoload/airline/themes/molokai.vim
 
 * Version 1.0.3.1
 
