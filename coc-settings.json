@@ -1,0 +1,5 @@
+{
+    "phpls.enable": true,
+    "suggest.triggerAfterInsertEnter": true,
+    "coc.preferences.enableFloatHighlight":false
+}
