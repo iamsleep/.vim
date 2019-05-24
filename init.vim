@@ -18,6 +18,5 @@ source /home/iamsleep/.vim/nvim_config/indentLine.vim
 source /home/iamsleep/.vim/nvim_config/go.vim
 source /home/iamsleep/.vim/nvim_config/rust.vim
 source /home/iamsleep/.vim/nvim_config/coc.vim
-"source /home/iamsleep/.vim/nvim_config/coc-php.vim
 
 filetype plugin indent on
