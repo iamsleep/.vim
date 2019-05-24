@@ -1,5 +1,6 @@
 {
     "phpls.enable": true,
     "suggest.triggerAfterInsertEnter": true,
-    "coc.preferences.enableFloatHighlight":false
+    "coc.preferences.enableFloatHighlight":false,
+    "java.home": "/home/y/libexec64/jdk64-1.8.0/"
 }
