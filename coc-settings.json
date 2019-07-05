@@ -2,5 +2,14 @@
     "phpls.enable": true,
     "suggest.triggerAfterInsertEnter": true,
     "coc.preferences.enableFloatHighlight":false,
-    "java.home": "/home/y/libexec64/jdk64-1.8.0/"
+    "json.enable": true,
+    "java.home": "/home/y/libexec64/jdk64-1.8.0/",
+    "java.import.gradle.enabled": true,
+    "java.import.maven.enabled":true,
+    "java.autobuild.enabled": true,
+    "java.completion.guessMethodArguments": true,
+    "java.completion.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.maven.downloadSources": true
+
 }
