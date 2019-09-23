@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/iamsleep/bash/tmux'
-let g:netrw_dirhist_2='/home/iamsleep/git-my/component_auction2_meta_package/screwdriver'
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/iamsleep/git-my/component_auctions_rosetta/conf'
+let g:netrw_dirhist_2='/home/iamsleep/local/blesh'
+let g:netrw_dirhist_1='/home/iamsleep/git-my/component_ec_api_auction_api_buyer/screwdriver'

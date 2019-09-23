@@ -3,6 +3,7 @@
     "suggest.triggerAfterInsertEnter": true,
     "coc.preferences.enableFloatHighlight":false,
     "json.enable": true,
+    "json.format.enable": true,
     "java.home": "/home/y/libexec64/jdk64-1.8.0/",
     "java.import.gradle.enabled": true,
     "java.import.maven.enabled":true,
@@ -10,5 +11,6 @@
     "java.completion.guessMethodArguments": true,
     "java.completion.enabled": true,
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.jdt.ls.vmargs": " -javaagent:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -Xbootclasspath/a:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp /home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar"
+    "java.jdt.ls.home": "/home/iamsleep/local/lib/jdt/",
+    "java.jdt.ls.vmargs": " -javaagent:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -Xbootclasspath/a:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp /home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp "
 }
