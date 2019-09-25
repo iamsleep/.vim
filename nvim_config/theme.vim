@@ -1,5 +1,5 @@
 set t_Co=256
-colorscheme nova
+silent! colorscheme nova
 
 "autocmd ColorScheme janah highlight Normal ctermbg=235
 "colorscheme janah
