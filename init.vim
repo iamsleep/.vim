@@ -18,7 +18,7 @@ source /home/iamsleep/.vim/nvim_config/indentLine.vim
 source /home/iamsleep/.vim/nvim_config/go.vim
 source /home/iamsleep/.vim/nvim_config/rust.vim
 
-if ! exists(':CocConfig')
+if exists(':CocConfig')
     source /home/iamsleep/.vim/nvim_config/coc.vim
 endif
 
