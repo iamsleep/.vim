@@ -17,8 +17,7 @@ source /home/iamsleep/.vim/nvim_config/vim-easy-align.vim
 source /home/iamsleep/.vim/nvim_config/indentLine.vim
 source /home/iamsleep/.vim/nvim_config/go.vim
 source /home/iamsleep/.vim/nvim_config/rust.vim
-
-if exists(':CocConfig')
+if !empty(glob("/home/iamsleep/.vim/plugged/coc.nvim/plugin/coc.vim"))
     source /home/iamsleep/.vim/nvim_config/coc.vim
 endif
 
