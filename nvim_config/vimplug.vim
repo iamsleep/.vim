@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'iamsleep/vim-airline-themes'
 Plug 'iamsleep/nova-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "let g:python3_host_prog='/home/iamsleep/local/bin/python3.6'
 "let g:deoplete#enable_at_startup = 1
