@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug '/home/iamsleep/bash/fzf/bin/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'easymotion/vim-easymotion'
