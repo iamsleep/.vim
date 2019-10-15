@@ -12,5 +12,15 @@
     "java.completion.enabled": true,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.jdt.ls.home": "/home/iamsleep/local/lib/jdt/",
-    "java.jdt.ls.vmargs": " -javaagent:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -Xbootclasspath/a:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp /home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp "
+    "java.jdt.ls.vmargs": " -javaagent:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -Xbootclasspath/a:/home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp /home/iamsleep/.m2/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar -cp ",
+    "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  }
 }
