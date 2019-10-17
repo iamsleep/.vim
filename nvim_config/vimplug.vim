@@ -27,6 +27,13 @@ Plug 'racer-rust/vim-racer'
 
 " autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-json'
+Plug 'neoclide/coc-java'
+Plug 'neoclide/coc-tabnine'
+Plug 'neoclide/coc-pairs'
+Plug 'neoclide/coc-yaml'
+Plug 'marlonfan/coc-phpls'
 "Plug 'zxqfl/tabnine-vim'
 
 "Plug 'w0rp/ale'
