@@ -26,14 +26,14 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-tsserver'
-Plug 'neoclide/coc-json'
-Plug 'neoclide/coc-java'
-Plug 'neoclide/coc-tabnine'
-Plug 'neoclide/coc-pairs'
-Plug 'neoclide/coc-yaml'
-Plug 'marlonfan/coc-phpls'
+Plug 'neoclide/coc.nvim', { 'branch': 'release','do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls' }
+"Plug 'neoclide/coc-tsserver'
+"Plug 'neoclide/coc-json'
+"Plug 'neoclide/coc-java'
+"Plug 'neoclide/coc-tabnine'
+"Plug 'neoclide/coc-pairs'
+"Plug 'neoclide/coc-yaml'
+"Plug 'marlonfan/coc-phpls'
 "Plug 'zxqfl/tabnine-vim'
 
 "Plug 'w0rp/ale'
