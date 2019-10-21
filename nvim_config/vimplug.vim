@@ -27,13 +27,13 @@ Plug 'racer-rust/vim-racer'
 
 " autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release','do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls' }
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tabnine', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-tabnine', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'zxqfl/tabnine-vim'
 
 "Plug 'w0rp/ale'
