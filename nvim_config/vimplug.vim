@@ -11,7 +11,7 @@ Plug 'iamsleep/nova-vim'
 Plug 'sheerun/vim-polyglot'
 
 " golang
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -26,7 +26,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " autocomplete
-Plug 'neoclide/coc.nvim', { 'branch': 'release','do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release','do': [':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets', 'sed -i 's/lsp": false/lsp": true/g' .config/TabNine/tabnine_config.json'] }
 "Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
