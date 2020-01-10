@@ -26,7 +26,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " autocomplete
-Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' } 
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' }
 " , 'sed -i 's/lsp": false/lsp": true/g' .config/TabNine/tabnine_config.json'] }
 "Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -47,5 +47,16 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver
 
 " surround
 Plug 'tpope/vim-surround'
+
+function! BuildYCM(info)
+  " info is a dictionary with 3 fields
+  " - name:   name of the plugin
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !./install.py --all
+  endif
+endfunction
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 call plug#end()
