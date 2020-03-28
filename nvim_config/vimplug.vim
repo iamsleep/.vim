@@ -70,6 +70,7 @@ silent! autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERD
 Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
 
 " Require ncm2 and this plugin
+" https://yarnaudov.com/the-best-neovim-vim-php-autocomplete-plugin-by-far.html
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'phpactor/ncm2-phpactor'
