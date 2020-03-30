@@ -66,16 +66,4 @@ silent! autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | en
 silent! autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 silent! autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Include Phpactor
-Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
-
-" Require ncm2 and this plugin
-" https://yarnaudov.com/the-best-neovim-vim-php-autocomplete-plugin-by-far.html
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'phpactor/ncm2-phpactor'
-
-silent! autocmd BufEnter * call ncm2#enable_for_buffer()
-silent! set completeopt=noinsert,menuone,noselect
-
 call plug#end()
