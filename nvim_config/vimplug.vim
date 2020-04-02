@@ -27,7 +27,6 @@ Plug 'racer-rust/vim-racer'
 
 " autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' }
-" , 'sed -i 's/lsp": false/lsp": true/g' .config/TabNine/tabnine_config.json'] }
 "Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
@@ -61,9 +60,13 @@ Plug 'tpope/vim-surround'
 
 " nerd tree
 Plug 'preservim/nerdtree'
-silent! autocmd StdinReadPre * let s:std_in=1
-silent! autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-silent! autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-silent! autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"silent! autocmd StdinReadPre * let s:std_in=1
+"silent! autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"silent! autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+"silent! autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" vim-rainbow, https://github.com/frazrepo/vim-rainbow
+Plug 'frazrepo/vim-rainbow'
+let g:rainbow_active = 1
 
 call plug#end()
