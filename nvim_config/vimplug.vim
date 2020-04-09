@@ -69,7 +69,7 @@ Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
 let g:rainbow_active = 1
 let g:rainbow_load_separately = [
-    \ [ '*.{md,sh,yaml,vim}' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
+    \ [ '*.{md,sh,yaml,vim,yidf,yicf}' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
     \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
     \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
     \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
