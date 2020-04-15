@@ -65,19 +65,6 @@ Plug 'preservim/nerdtree'
 "silent! autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 "silent! autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" vim-rainbow, https://github.com/frazrepo/vim-rainbow
-Plug 'frazrepo/vim-rainbow'
-let g:rainbow_active = 1
-let g:rainbow_load_separately = [
-    \ [ '*.{md,sh,yaml,vim,yidf,yicf}' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
-    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
-    \ ]
-
-let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
-let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
-
 " list function
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags'
