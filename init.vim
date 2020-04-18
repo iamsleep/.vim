@@ -21,7 +21,6 @@ if !empty(glob("/home/iamsleep/.vim/plugged/coc.nvim/plugin/coc.vim"))
     source /home/iamsleep/.vim/nvim_config/coc.vim
 endif
 
-let GTAGSCONF=/home/iamsleep/local/global/share/gtags/gtags.conf
 let GTAGSLABEL="native-pygments"
 
 filetype plugin indent on
