@@ -203,7 +203,7 @@ let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
 let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-let g:gutentags_ctags_extra_args += ['--PHP-kinds=+cf']
+let g:gutentags_ctags_extra_args += ['--php-kinds=+cf']
 let g:gutentags_ctags_extra_args += ['--Go-kinds=+cf']
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 let g:gutentags_auto_add_gtags_cscope = 1
