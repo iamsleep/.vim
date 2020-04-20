@@ -179,6 +179,7 @@ Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 " Dark powered asynchronous completion framework for neovim/Vim8
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog=$HOME.'/local/python/bin/python'
 
 " Viewer & Finder for LSP symbols and tags
 Plug 'liuchengxu/vista.vim'
