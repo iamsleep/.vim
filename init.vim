@@ -178,6 +178,9 @@ Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Viewer & Finder for LSP symbols and tags
 Plug 'liuchengxu/vista.vim'
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+let g:vista_sidebar_position = 'vertical topleft'
+let g:vista_default_executive = 'coc'
 
 " A Vim plugin that manages your tag files
 Plug 'ludovicchabant/vim-gutentags'
