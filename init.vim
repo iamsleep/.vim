@@ -205,6 +205,7 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--php-kinds=+cft']
 let g:gutentags_ctags_extra_args += ['--Go-kinds=+cf']
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitrebase']
 let g:gutentags_auto_add_gtags_cscope = 1
 let g:gutentags_define_advanced_commands = 1
 let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.json', '*.xml', '*.phar', '*.ini', '*.rst', '*.md', '*.bin', '*storage/*', '*vendor/*', '*node_modules/*', '*public/*']
