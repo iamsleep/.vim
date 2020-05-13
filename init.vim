@@ -182,38 +182,9 @@ let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 let g:vista_sidebar_position = 'vertical topleft'
 let g:vista_default_executive = 'coc'
 
-" A Vim plugin that manages your tag files
-Plug 'ludovicchabant/vim-gutentags'
-" The right way to use gtags with gutentags
-Plug 'skywind3000/gutentags_plus'
-
 " submline text visual
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
-
-""""""""""""
-" settings "
-""""""""""""
-" skywind3000/gutentags_plus
-let g:gutentags_auto_add_gtags_cscope = 1
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.hg', '.project']
-let g:gutentags_modules = ['ctags', 'gtags_cscope']
-let g:gutentags_cache_dir = expand('~/.cache/tags')
-let g:gutentags_ctags_tagfile = '.tags'
-let g:gutentags_ctags_exclude = ['*.css', '*.html', '*.json', '*.xml', '*.phar', '*.ini', '*.rst', '*.md', '*.bin', '*storage/*', '*vendor/*', '*node_modules/*', '*public/*']
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-let g:gutentags_ctags_extra_args += ['--php-kinds=+cft']
-let g:gutentags_ctags_extra_args += ['--Go-kinds=+cf']
-let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
-let g:gutentags_exclude_filetypes = ['gitcommit', 'gitrebase']
-let g:gutentags_define_advanced_commands = 1
-let g:gutentags_generate_on_new = 1
-let g:gutentags_generate_on_missing = 1
-let g:gutentags_generate_on_write = 1
-let g:gutentags_generate_on_empty_buffer = 0
-let g:gutentags_plus_switch = 1
 
 " theme
 set t_Co=256
@@ -342,7 +313,7 @@ function! s:build_go_files()
 endfunction
 
 
-" vim-racer
+" vim-racer for rust autocomplete
 set hidden
 let g:racer_cmd = "/home/iamsleep/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
