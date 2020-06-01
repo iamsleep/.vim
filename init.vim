@@ -230,6 +230,7 @@ let g:fzf_action = {
 
 let g:fzf_buffers_jump = 1
 let g:fzf_command_prefix = 'FZF'
+let g:fzf_preview_window = 'right:60%'
 map fu <esc>:FZFBuffers<cr>
 nnoremap <leader>ff  :execute 'FZFFiles'<esc>
 nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
