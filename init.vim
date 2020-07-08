@@ -148,8 +148,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'iamsleep/vim-airline-themes'
 Plug 'iamsleep/nova-vim'
+
 " A solid language pack for Vim
 Plug 'sheerun/vim-polyglot'
+" https://github.com/plasticboy/vim-markdown under vim-polyglot
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
 
 " golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
@@ -161,14 +165,6 @@ Plug 'racer-rust/vim-racer'
 
 " autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' }
-"Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-tabnine', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'marlonfan/coc-phpls', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'zxqfl/tabnine-vim'
 
 " surround
 Plug 'tpope/vim-surround'
@@ -176,11 +172,11 @@ Plug 'tpope/vim-surround'
 " The dark powered file explorer implementation
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 
-" Viewer & Finder for LSP symbols and tags
-Plug 'liuchengxu/vista.vim'
-let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
-let g:vista_sidebar_position = 'vertical topleft'
-let g:vista_default_executive = 'coc'
+""" Viewer & Finder for LSP symbols and tags
+""Plug 'liuchengxu/vista.vim'
+""let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+""let g:vista_sidebar_position = 'vertical topleft'
+""let g:vista_default_executive = 'coc'
 
 " submline text visual
 Plug 'terryma/vim-multiple-cursors'
