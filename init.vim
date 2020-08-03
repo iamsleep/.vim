@@ -221,22 +221,12 @@ set laststatus=2
 let s:number_setting = 1
 set number
 
-" fzf
-set rtp+=~/bash/fzf/
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'split',
-  \ 'ctrl-v': 'vsplit' }
-
-let g:fzf_buffers_jump = 1
-let g:fzf_command_prefix = 'FZF'
-let g:fzf_preview_window = 'right:60%'
-map fu <esc>:FZFBuffers<cr>
-nnoremap <leader>ff  :execute 'FZFFiles'<esc>
-nnoremap dir :execute 'FZFFiles ' . input("DIRECTORY: ")<esc>
-nnoremap fhi :execute 'FZFHistory'<esc>
-nnoremap chi :execute 'FZFHistory:'<esc>
-nnoremap shi :execute 'FZFHistory/'<esc>
+" vim-clap
+let g:clap_theme = 'material_design_dark'
+map fu <esc>:Clap buffers<cr>
+nnoremap fhi :execute 'Clap files'<esc>
+nnoremap chi :execute 'Clap command_history'<esc>
+nnoremap shi :execute 'Clap search_history'<esc>
 
 " vim-easy-align setting
 " Start interactive EasyAlign in visual mode (e.g. vipga)
