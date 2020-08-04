@@ -165,7 +165,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " autocomplete
-Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': ':CocInstall coc-tsserver coc-json coc-java coc-tabnine coc-pairs coc-yaml coc-phpls coc-snippets coc-explorer' }
 
 " surround
 Plug 'tpope/vim-surround'
