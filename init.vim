@@ -228,6 +228,7 @@ map fu <esc>:Clap buffers<cr>
 nnoremap fhi :execute 'Clap files'<esc>
 nnoremap chi :execute 'Clap command_history'<esc>
 nnoremap shi :execute 'Clap search_history'<esc>
+nmap <space>e :CocCommand explorer<CR>
 
 " vim-easy-align setting
 " Start interactive EasyAlign in visual mode (e.g. vipga)
