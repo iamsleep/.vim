@@ -208,7 +208,8 @@ nnoremap <C-]> :GtagsCursor<CR>
 
 " airline
 let g:airline_highlighting_cache = 1
-let g:airline_theme='molokai'
+"let g:airline_theme='molokai'
+let g:airline_theme='ci_dark'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
