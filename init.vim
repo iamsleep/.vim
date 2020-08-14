@@ -185,11 +185,14 @@ Plug 'terryma/vim-multiple-cursors'
 " Vim-clap is a modern generic interactive finder and dispatcher, based on the newly feature: floating_win of neovim or popup of vim. The goal of vim-clap is to work everywhere out of the box, with fast response. 
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
+" new color theme
+Plug 'chuling/ci_dark'
+
 call plug#end()
 
 " theme
 set t_Co=256
-silent! colorscheme nova
+silent! colorscheme ci_dark
 
 " delete white space
 nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>
