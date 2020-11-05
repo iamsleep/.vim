@@ -187,12 +187,14 @@ Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
 " new color theme
 Plug 'chuling/ci_dark'
+" theme elly https://github.com/ryuta69/elly.vim
+Plug 'ryuta69/elly.vim'
 
 call plug#end()
 
 " theme
 set t_Co=256
-silent! colorscheme ci_dark
+silent! colorscheme elly
 
 " delete white space
 nnoremap <Leader>d$ :<C-u>%DeleteTrailingWhitespace<CR>
